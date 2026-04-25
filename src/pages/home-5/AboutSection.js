@@ -5,7 +5,7 @@ import RightArrow from '../../components/SVG';
 
 import shapeImg1 from '../../assets/img/about/ed-shape-2.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-1.png';
-import aboutImg1 from '../../assets/img/about/ed-5-1.jpg';
+import aboutImg1 from '../../assets/img/custom/home-5/3.svg';
 import aboutImg2 from '../../assets/img/about/ed-5-2.jpg';
 
 const About = () => {
@@ -21,37 +21,54 @@ const About = () => {
               <SectionTitle
                 itemClass="it-about-5-title-box pb-10 section-title-fixed-width-2"
                 subTitleClass="ed-section-subtitle"
-                subTitle="our about us"
+                subTitle="About Us"
                 titleClass="it-section-title-5"
-                title="We Are High School Since 10 Years Experience"
+                title="Welcome to Ever Green Senior Secondary School"
               />
               <div className="it-about-5-text mb-30">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do <br /> eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut <br /> enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris <br /> nisi ut aliquip ex ea
-                  commodo consequat.
+                  Ever Green Senior Secondary School, established on 13 July 1996
+                  by Mr. L. D. Pathak, is a premier English-medium institution
+                  affiliated to CBSE, New Delhi, and managed by Educational Welfare
+                  Society, Tularampur. Located at Sri Ganga Vihar Colony, Beri
+                  Parao, Nainital (Uttarakhand), the school is known as one of the
+                  best CBSE Senior Secondary schools in Halduchaur Haldwani.
                 </p>
               </div>
               <div className="ed-about-5-content">
                 <div className="it-about-5-list mb-10">
                   <ul>
                     <li>
-                      <i className="fa-regular fa-check"></i>Best Teaching
+                      <i className="fa-regular fa-check"></i>First English-medium
+                      school in this remote rural area
                     </li>
                     <li>
-                      <i className="fa-regular fa-check"></i>Quality Educators
+                      <i className="fa-regular fa-check"></i>Motto: "Vidyaiv Balam"
+                      - intellectual exploration and creativity
                     </li>
                   </ul>
                 </div>
                 <div className="it-about-5-list mb-40">
                   <ul>
                     <li>
-                      <i className="fa-regular fa-check"></i>Expert Tutor
+                      <i className="fa-regular fa-check"></i>Mission: holistic,
+                      value-based and exploratory learning
                     </li>
                     <li>
-                      <i className="fa-regular fa-check"></i>Affordable
+                      <i className="fa-regular fa-check"></i>Vision: nurturing
+                      leaders of tomorrow with integrity and responsibility
+                    </li>
+                  </ul>
+                </div>
+                <div className="it-about-5-list mb-40">
+                  <ul>
+                    <li>
+                      <i className="fa-regular fa-check"></i>Established in 1996
+                      with a commitment to academic excellence
+                    </li>
+                    <li>
+                      <i className="fa-regular fa-check"></i>Focus on scholastic
+                      growth with all-round personality development
                     </li>
                   </ul>
                 </div>
@@ -59,9 +76,9 @@ const About = () => {
               <div className="it-feature-button">
                 <Link
                   className="ed-btn-square orange"
-                  to="/student-registration"
+                  to="/about-us"
                 >
-                  admission open
+                  Read full history
                   <i>
                     <RightArrow />
                   </i>

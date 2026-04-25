@@ -95,17 +95,26 @@ const FooterTwo = (props) => {
                     </p>
                   </div>
                   <div className="it-footer-social">
-                    <a href="#">
+                    <a
+                      href="https://www.facebook.com/evergreenseniorsecondaryschool?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a
+                      href="https://www.instagram.com/evergreenseniorsecondaryschool"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fa-brands fa-twitter"></i>
+                    <a
+                      href="https://www.youtube.com/@evergreenseniorsecondaryschool"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-youtube"></i>
                     </a>
                   </div>
                 </div>

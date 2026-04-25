@@ -38,9 +38,9 @@ const Testimonial = () => {
               <SectionTitle
                 itemClass="it-testimonial-title-box text-center"
                 subTitleClass="ed-section-subtitle"
-                subTitle="testimonial"
+                subTitle="Testimonials"
                 titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
+                title="Happy Parents"
               />
             </div>
           </div>
@@ -56,62 +56,50 @@ const Testimonial = () => {
                 >
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`Ever Green Sr. Sec. School has a strong sense of community, high standards for academics, and well-mannered students. The school is academically challenging and emphasizes being a good person.`}
                       authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`Our children feel loved, safe, and are learning and growing in both spiritual and academic areas. The faculty and administration are wonderful and dedicated.`}
                       authorAvatar={avatarImg2}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`Ever Green gives parents many opportunities to be involved in their children's education and school functions.`}
                       authorAvatar={avatarImg3}
-                      authorName="Elsie Stroud"
-                      designation="CEO at Edwards"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`I respect and admire the teachers and staff. My children have always received priority, encouragement, and support throughout their academic development.`}
                       authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`Ever Green is truly one of the best learning centres for children with a focus on scholastic excellence and overall personality development.`}
                       authorAvatar={avatarImg2}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonialThree
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque 
-                        dignissim enim. Amet consectetur adipiscing”`}
+                      description={`A caring environment, disciplined culture, and quality teaching make this school a trusted choice for families in Haldwani and nearby areas.`}
                       authorAvatar={avatarImg1}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
+                      authorName="Parent Review"
+                      designation="Ever Green School"
                     />
                   </SwiperSlide>
                 </Swiper>

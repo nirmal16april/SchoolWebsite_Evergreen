@@ -9,30 +9,30 @@ const FAQ = () => {
   const items = [
     {
       id: 'a',
-      btnText: 'Why do students prefer online learning?',
+      btnText: 'When was Ever Green Senior Secondary School established?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        'Ever Green Senior Secondary School was established on 13 July 1996 by Late Sh. L. D. Pathak in Haldwani, Uttarakhand.',
       faqImage: faqImg,
     },
     {
       id: 'b',
-      btnText: 'Where should I study abroad?',
+      btnText: 'Is the school affiliated to CBSE?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        'Yes. Ever Green is a premier English-medium institution affiliated to C.B.S.E., New Delhi.',
       faqImage: faqImg,
     },
     {
       id: 'c',
-      btnText: 'How can I contact a school directly?',
+      btnText: 'Where is the campus located?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        'The campus is at Sri Ganga Vihar Colony, Beri Parao, Vill-Tularampur, P.O. Motahaldu, Teh-Lalkuan, Nainital, Uttarakhand.',
       faqImage: faqImg,
     },
     {
       id: 'd',
-      btnText: 'How do I find a school where I want to study?',
+      btnText: 'How can parents connect with the school?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+        'You can call reception at 05946-292491 or email us at evergreenpublicschool42@yahoo.in for admissions and school information.',
       faqImage: faqImg,
     },
   ];
@@ -59,9 +59,9 @@ const FAQ = () => {
               <SectionTitle
                 itemClass="it-faq-title-box mb-20"
                 subTitleClass="ed-section-subtitle"
-                subTitle="faq"
+                subTitle="FAQ"
                 titleClass="it-section-title-5"
-                title="Frequently asked some questions?"
+                title="Frequently asked questions"
               />
 
               <FaqOne items={items} />

@@ -24,15 +24,15 @@ const Course = () => {
               <SectionTitle
                 itemClass="it-course-title-box"
                 subTitleClass="ed-section-subtitle"
-                subTitle="Our Courses"
+                subTitle="Our Facilities"
                 titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
+                title="Modern facilities for safe and effective learning."
               />
             </div>
             <div className="col-xl-6">
               <div className="ed-course-button text-lg-end">
                 <Link className="ed-btn-square orange" to="/course-details">
-                  Explore courses
+                  View all facilities
                   <i>
                     <RightArrow />
                   </i>
@@ -49,10 +49,10 @@ const Course = () => {
           >
             <SingleCourse
               courseImage={courseImg1}
-              thumbText="Digital Marketing"
-              title="It Statistics Data Science And Business Analysis"
+              thumbText="School Transport"
+              title="Safe bus service for students from nearby and far locations."
               authorAvatar={avatarImg1}
-              authorName="Samantha"
+              authorName="Ever Green"
             />
           </div>
           <div
@@ -62,10 +62,10 @@ const Course = () => {
           >
             <SingleCourse
               courseImage={courseImg2}
-              thumbText="Digital Marketing"
-              title="It Statistics Data Science And Business Analysis"
+              thumbText="Library"
+              title="A rich learning hub with reading resources and references."
               authorAvatar={avatarImg2}
-              authorName="Charles"
+              authorName="Ever Green"
             />
           </div>
           <div
@@ -75,10 +75,10 @@ const Course = () => {
           >
             <SingleCourse
               courseImage={courseImg3}
-              thumbText="Digital Marketing"
-              title="It Statistics Data Science And Business Analysis"
+              thumbText="STEM & Robotics Lab"
+              title="Hands-on innovation in science, technology, engineering and math."
               authorAvatar={avatarImg3}
-              authorName="Morgan"
+              authorName="Ever Green"
             />
           </div>
         </div>

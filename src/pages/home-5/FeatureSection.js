@@ -15,14 +15,22 @@ const Feature = () => {
             data-wow-duration=".9s"
             data-wow-delay=".3s"
           >
-            <SingleFeatureTwo iconImage={iconImg1} title="Education Services" />
+            <SingleFeatureTwo
+              iconImage={iconImg1}
+              title="360° Holistic Education"
+              description="We nurture every learner through academics, life skills, values, and co-curricular growth to build confident and capable individuals."
+            />
           </div>
           <div
             className="col-xl-4 col-lg-4 col-md-6 mb-30 wow animate__fadeInUp"
             data-wow-duration=".9s"
             data-wow-delay=".5s"
           >
-            <SingleFeatureTwo iconImage={iconImg2} title="International Hubs" />
+            <SingleFeatureTwo
+              iconImage={iconImg2}
+              title="Secured Environment"
+              description="Our campus provides a safe, disciplined, and caring atmosphere where students can learn with confidence and parents can feel assured."
+            />
           </div>
           <div
             className="col-xl-4 col-lg-4 col-md-6 mb-30 wow animate__fadeInUp"
@@ -31,7 +39,8 @@ const Feature = () => {
           >
             <SingleFeatureTwo
               iconImage={iconImg3}
-              title="Bachelor’s and Master’s"
+              title="Traditional Gurukul Approach"
+              description="We blend timeless Gurukul values with modern teaching practices to develop character, respect, and strong academic foundations."
             />
           </div>
         </div>

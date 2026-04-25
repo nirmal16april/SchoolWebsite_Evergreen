@@ -17,9 +17,9 @@ const Blog = () => {
           <div className="row align-items-end">
             <div className="col-xl-8 col-lg-8 col-md-8">
               <div className="it-blog-title-box">
-                <span className="ed-section-subtitle">DIRECTLY FROM BLOG</span>
+                <span className="ed-section-subtitle">Bulletin</span>
                 <h4 className="ed-section-title">
-                  Our latest news <br /> & upcoming blog posts
+                  Latest events <br /> & school news
                 </h4>
               </div>
             </div>
@@ -27,7 +27,7 @@ const Blog = () => {
               <div className="it-blog-button text-start text-md-end">
                 <Link className="ed-btn-square dark" to="/blog-1">
                   <span>
-                    view all recent post
+                    view all updates
                     <RightArrow />
                   </span>
                 </Link>
@@ -43,10 +43,9 @@ const Blog = () => {
           >
             <SingleBlogTwo
               blogImage={blogImg1}
-              title="Lorem ipsum dolor sit amet, consectetur Adipiscing elit, sed
-                    do."
-              authorName="Sunilra smoth"
-              publishedDate="March 28, 2023"
+              title="Admissions Open for session 2025-26"
+              authorName="Ever Green School"
+              publishedDate="27/11/2024"
               btnClass="ed-btn-square orange sm"
               hasArrow
             />
@@ -58,10 +57,9 @@ const Blog = () => {
           >
             <SingleBlogTwo
               blogImage={blogImg2}
-              title="Lorem ipsum dolor sit amet, consectetur Adipiscing elit, sed
-                    do."
-              authorName="Sunilra smoth"
-              publishedDate="March 28, 2023"
+              title="JOIN 1 UK AIR SQN NCC - Visit programme highlights"
+              authorName="Ever Green School"
+              publishedDate="23/11/2024"
               btnClass="ed-btn-square orange sm"
               hasArrow
             />
