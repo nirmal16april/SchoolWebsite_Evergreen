@@ -15,9 +15,9 @@ const Work = () => {
             <SectionTitle
               itemClass="it-course-title-box mb-60 text-center"
               subTitleClass="it-section-subtitle-2 white-bg"
-              subTitle="OUR feature"
+              subTitle="Our Activities"
               titleClass="ed-section-title"
-              title="Meet Our Expert Instructor"
+              title="Learning Beyond the Classroom"
             />
           </div>
         </div>
@@ -30,7 +30,8 @@ const Work = () => {
             <SingleWork
               itemClass="it-work-item"
               iconImage={iconImg1}
-              title="start course"
+              title="Creative Arts"
+              description="Creative arts encourage students to express ideas confidently, think critically, and build imagination through drawing, music, dance, and craft."
             />
           </div>
           <div
@@ -41,7 +42,8 @@ const Work = () => {
             <SingleWork
               itemClass="it-work-item active"
               iconImage={iconImg2}
-              title="EXPERT TEACHERS"
+              title="Outdoor Games"
+              description="Outdoor games like cricket, basketball, volleyball, and kho-kho promote teamwork, discipline, physical fitness, and a strong sporting spirit."
             />
           </div>
           <div
@@ -52,7 +54,8 @@ const Work = () => {
             <SingleWork
               itemClass="it-work-item"
               iconImage={iconImg3}
-              title="STRATEGI LOCATION"
+              title="Indoor Activities"
+              description="Indoor activities such as chess and table tennis sharpen focus, quick decision-making, and strategic thinking in a fun and engaging environment."
             />
           </div>
         </div>

@@ -15,14 +15,14 @@ const CTA = () => {
           <div className="col-xxl-9 col-xl-8 col-lg-7 col-md-7">
             <div className="it-cta-content">
               <h4 className="it-cta-title">
-                educate gives you the tools create an online course.
+                Registration open for session 2026-27 at Ever Green Senior Secondary School.
               </h4>
             </div>
           </div>
           <div className="col-xxl-3 col-xl-4 col-lg-5 col-md-5">
             <div className="it-cta-button text-md-end">
-              <Link className="ed-btn-square orange" to="/course-details">
-                Explore courses
+              <Link className="ed-btn-square orange" to="/contact">
+                Enrol your child
                 <i>
                   <RightArrow />
                 </i>

@@ -71,7 +71,7 @@ function App() {
       <ScrollToTop />
       <LoadTop />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeFive />} />
         <Route path="/home-one-page" element={<HomeOnePage />} />
         <Route path="/home-2" element={<HomeTwo />} />
         <Route path="/home-2-one-page" element={<HomeTwoOnePage />} />

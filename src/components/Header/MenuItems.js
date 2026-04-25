@@ -1,37 +1,22 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import homeImg1 from '../../assets/img/menu/home-1.jpg';
-import homeImg2 from '../../assets/img/menu/home-2.jpg';
-import homeImg3 from '../../assets/img/menu/home-3.jpg';
-import homeImg4 from '../../assets/img/menu/home-4.jpg';
-import homeImg5 from '../../assets/img/menu/home-5.jpg';
-
 const MenuItems = (props) => {
   const { mobileMenu } = props;
-  const [home, setHome] = useState(false);
   const [course, setCourse] = useState(false);
   const [page, setPage] = useState(false);
   const [blog, setBlog] = useState(false);
 
   const openMobileMenu = (menu) => {
-    if (menu === 'home') {
-      setHome(!home);
-      setCourse(false);
-      setPage(false);
-      setBlog(false);
-    } else if (menu === 'course') {
-      setHome(false);
+    if (menu === 'course') {
       setCourse(!course);
       setPage(false);
       setBlog(false);
     } else if (menu === 'page') {
-      setHome(false);
       setCourse(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
-      setHome(false);
       setCourse(false);
       setPage(false);
       setBlog(!blog);
@@ -46,126 +31,10 @@ const MenuItems = (props) => {
 
   return (
     <ul>
-      <li className="has-dropdown p-static">
-        <Link
-          to="/"
-          className={`${home ? 'expanded' : ''}`}
-          onClick={handleClick}
-        >
+      <li>
+        <Link to="/">
           <span>Home</span>
-          <button
-            className={`${
-              home
-                ? 'dropdown-toggle-btn dropdown-opened'
-                : 'dropdown-toggle-btn'
-            } d-xl-none `}
-            onClick={() => {
-              openMobileMenu('home');
-            }}
-          >
-            <i className="fal fa-angle-right"></i>
-          </button>
         </Link>
-        <div
-          className={
-            home
-              ? 'it-submenu submenu has-home-img d-block'
-              : 'it-submenu submenu has-home-img'
-          }
-        >
-          <div className="row gx-6 row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-5">
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg1} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="/home-one-page">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="/">Home 01</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg2} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-2">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="/home-2-one-page">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="/home-2">Home 02</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg3} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-3">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="/home-3-one-page">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="/home-3">Home 03</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg4} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-4">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="/home-4-one-page">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="/home-4">Home 04</Link>
-                </h4>
-              </div>
-            </div>
-            <div className="col home-img">
-              <div className="home-img-thumb mb-15">
-                <img src={homeImg5} alt="" />
-                <div className="home-img-btn">
-                  <Link className="it-btn-white-sm" to="/home-5">
-                    Multi Page
-                  </Link>
-                  <Link className="it-btn-white-sm" to="/home-5-one-page">
-                    One Page
-                  </Link>
-                </div>
-              </div>
-              <div className="home-img-content text-center">
-                <h4 className="home-img-title">
-                  <Link to="/home-5">Home 05</Link>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
       </li>
       <li>
         <Link to="/about-us">

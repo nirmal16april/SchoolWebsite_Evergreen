@@ -10,7 +10,7 @@ const SingleBanner = (props) => {
   const { setVideoId, setOpen, stopAutoplay } = useVideoContext();
 
   const openModal = () => {
-    setVideoId('PO_fBTkoznc');
+    setVideoId('dPw2YEOzdfM');
     setOpen(true);
     stopAutoplay();
   };
@@ -34,21 +34,21 @@ const SingleBanner = (props) => {
               <div className="ed-slider-title text-white pb-5">
                 {title
                   ? title
-                  : 'We Lead A Professional Generation for the future.'}
+                  : 'Building Geniuses of Tomorrow'}
               </div>
               <div className="ed-slider-3-text">
                 <div>
                   <p className="text-white">
                     {description
                       ? description
-                      : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'}
+                      : 'Welcome to Ever Green Senior Secondary School, Haldwani. A premier English-medium CBSE institution committed to holistic learning, values, and future-ready education.'}
                   </p>
                 </div>
               </div>
               <div className="ed-slider-3-button-wrapper">
                 <div className="ed-slider-3-button d-flex align-content-center ">
                   <Link className="ed-btn-square orange mr-25" to="/about-us">
-                    {btnText ? btnText : 'discover more'}
+                    {btnText ? btnText : 'About Ever Green'}
                     <i>
                       <RightArrow />
                     </i>

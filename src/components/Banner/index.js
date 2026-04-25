@@ -5,9 +5,8 @@ import ModalVideo from 'react-modal-video';
 import { useVideoContext } from '../../context/VideoContext';
 import SingleBanner from './SingleBanner';
 
-import sliderImg1 from '../../assets/img/slider/thumb-5-1.jpg';
-import sliderImg2 from '../../assets/img/slider/thumb-5-2.jpg';
-import sliderImg3 from '../../assets/img/slider/thumb-5-3.jpg';
+const sliderImg1 = '/custom/home-5/1.svg';
+const sliderImg2 = '/custom/home-5/2.svg';
 
 const BannerSlider = () => {
   const { swiperRef, isOpen, setOpen, videoId, startAutoplay, stopAutoplay } =
@@ -61,9 +60,6 @@ const BannerSlider = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <SingleBanner sliderImage={sliderImg2} />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <SingleBanner sliderImage={sliderImg3} />
         </SwiperSlide>
       </Swiper>
     </div>

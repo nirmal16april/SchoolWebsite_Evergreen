@@ -14,6 +14,7 @@ const Video = () => {
   const openModal = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div
       className="it-video-area it-video-bg it-video-color p-relative fix pt-100 pb-95"
@@ -22,7 +23,7 @@ const Video = () => {
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
-        videoId="PO_fBTkoznc"
+        videoId="dPw2YEOzdfM"
         onClose={() => openModal()}
       />
       <div className="it-video-shape-2 d-none d-lg-block">
@@ -41,15 +42,15 @@ const Video = () => {
         <div className="row align-items-center">
           <div className="col-xl-7 col-lg-7 col-md-9 col-sm-9">
             <div className="it-video-content">
-              <span>Join Our New Session</span>
+              <span>Quick Contact</span>
               <h3 className="it-video-title">
-                Call To Enroll Your Child <br />
-                <a href="tel:+91958423452">(+91)958423452</a>
+                Always ahead for your solutions <br />
+                <a href="tel:+915946292491">05946-292491</a>
               </h3>
               <div className="it-video-button">
                 <Link className="ed-btn-square orange" to="/contact">
                   <span>
-                    Explore Courses
+                    Get in touch
                     <i>
                       <RightArrow />
                     </i>

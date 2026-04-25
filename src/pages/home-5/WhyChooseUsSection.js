@@ -13,21 +13,21 @@ const WhyChooseUs = () => {
   const items = [
     {
       icon: 'flaticon-skill',
-      title: 'Affordable Courses',
+      title: 'CBSE Senior Secondary Excellence',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor incididunt ut labore.',
+        'A premier English-medium institution affiliated to CBSE, New Delhi, delivering strong academic foundations with all-round personality development.',
     },
     {
       icon: 'flaticon-funds',
-      title: 'Efficient & Flexible',
+      title: 'Modern Facilities & Safe Campus',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor incididunt ut labore.',
+        'From labs and library to transport and interactive classes, students learn in a secure and supportive environment.',
     },
     {
       icon: 'flaticon-flexibility',
-      title: 'Skilled Teachers',
+      title: 'Values, Leadership & Life Skills',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor incididunt ut labore.',
+        'We nurture responsible future citizens through value-based learning, innovation, discipline, and confidence.',
     },
   ];
   return (
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
                 subTitleClass="it-section-subtitle-2 white-bg"
                 subTitle="WHY CHOOSE US"
                 titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
+                title="Best CBSE Senior Secondary School in Halduchaur Haldwani"
               />
               <div className="it-choose-content-box">
                 {items.map((item, index) => (
