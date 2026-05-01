@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import MenuItemsOnePage from './MenuItemsOnePage';
-import Logo from '../../assets/img/logo/logo-white-3.png';
+import Logo from '../../assets/img/logo/logo.svg';
 import OffCanvasInsta from '../OffCanvas';
 
 const HeaderThree = (props) => {
@@ -43,7 +43,7 @@ const HeaderThree = (props) => {
                   <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                     <div className="ed-header-3-logo">
                       <Link to="/">
-                        <img src={headerLogo ? headerLogo : Logo} alt="" />
+                        <img src={Logo} alt="" />
                       </Link>
                     </div>
                   </div>

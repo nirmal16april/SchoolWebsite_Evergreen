@@ -5,7 +5,7 @@ import MenuItemsOnePage from './MenuItemsOnePage';
 import RightArrow from '../SVG';
 import OffCanvasInsta from '../OffCanvas';
 
-import Logo from '../../assets/img/logo/logo-black.png';
+import Logo from '../../assets/img/logo/logo.svg';
 import svgImg1 from '../../assets/img/header/1.svg';
 import svgImg2 from '../../assets/img/header/2.svg';
 import svgImg3 from '../../assets/img/header/3.svg';
@@ -183,7 +183,7 @@ const Header = (props) => {
                 <div className="col-xxl-3 col-xl-2 col-lg-3 col-lg-6 col-md-6 col-6 col-sm-4">
                   <div className="ed-header-logo">
                     <Link to="/">
-                      <img src={headerLogo ? headerLogo : Logo} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                 </div>

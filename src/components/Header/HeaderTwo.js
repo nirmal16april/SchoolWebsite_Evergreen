@@ -7,8 +7,7 @@ import OffCanvasInsta from '../OffCanvas';
 
 import svgImg1 from '../../assets/img/header/4.svg';
 import svgImg2 from '../../assets/img/header/5.svg';
-import Logo from '../../assets/img/logo/logo-black-2.png';
-import LogoWhite from '../../assets/img/logo/logo-white-2.png';
+import Logo from '../../assets/img/logo/logo.svg';
 
 const HeaderTwo = (props) => {
   const { headerClass, headerLogo, onePage, parentMenu } = props;
@@ -43,7 +42,7 @@ const HeaderTwo = (props) => {
                 <div className="search__top d-flex justify-content-between align-items-center">
                   <div className="search__logo">
                     <Link to="/">
-                      <img src={LogoWhite} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                   <div className="search__close">
@@ -203,7 +202,7 @@ const HeaderTwo = (props) => {
                 <div className="col-xxl-3 col-xl-2 col-lg-6 col-6">
                   <div className="ed-header-2-logo">
                     <Link to="/">
-                      <img src={headerLogo ? headerLogo : Logo} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                 </div>

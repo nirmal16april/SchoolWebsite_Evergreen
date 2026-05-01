@@ -348,3 +348,23 @@ input[type='color'] {
 .gx-55 {
   --bs-gutter-x: 55px;
 }
+
+/* Make brand logos occupy 45% horizontal space */
+.ed-header-logo img,
+.ed-header-2-logo img,
+.ed-header-3-logo img,
+.ed-header-4-logo img,
+.ed-header-5-logo img,
+.search__logo img,
+.itoffcanvas__logo img {
+  width: 120%;
+  height: auto;
+  max-width: 120%;
+}
+
+/* Footer logo is intentionally smaller than header logos */
+.it-footer-logo img {
+  width: 45%;
+  height: auto;
+  max-width: 100%;
+}

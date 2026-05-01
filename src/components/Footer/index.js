@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import bgImg from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white.png';
+import Logo from '../../assets/img/logo/logo.svg';
 
 const Footer = (props) => {
-  const { footerClass, footerLogo, copyrightTextClass } = props;
+  const { footerClass, copyrightTextClass } = props;
 
   return (
     <footer>
@@ -27,7 +27,7 @@ const Footer = (props) => {
               <div className="it-footer-widget footer-col-1">
                 <div className="it-footer-logo pb-25">
                   <Link to="/">
-                    <img src={footerLogo ? footerLogo : Logo} alt="" />
+                    <img src={Logo} alt="" />
                   </Link>
                 </div>
                 <div className="it-footer-text pb-5">

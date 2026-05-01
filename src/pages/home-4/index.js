@@ -1,9 +1,7 @@
 import React from 'react';
-import FooterTwo from '../../components/Footer/FooterTwo';
+import Footer from '../../components/Footer';
 import HomeFourMain from './HomeFourMain';
 import HeaderFour from '../../components/Header/HeaderFour';
-
-import Logo from '../../assets/img/logo/logo-white-5.png';
 
 const HomeFour = () => {
   return (
@@ -12,10 +10,9 @@ const HomeFour = () => {
 
       <HomeFourMain />
 
-      <FooterTwo
-        footerClass="it-footer-area it-footer-bg it-footer-style-5 ed-footer-style-5 black-bg pb-70"
-        footerLogo={Logo}
-        btnClass="it-btn-white sky-bg"
+      <Footer
+        footerClass="it-footer-area it-footer-bg ed-footer-style-2 black-bg pt-120 pb-70"
+        copyrightTextClass="it-copyright-text style-3 text-center"
       />
     </>
   );
