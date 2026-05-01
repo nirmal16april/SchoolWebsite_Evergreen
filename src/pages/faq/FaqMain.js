@@ -8,43 +8,50 @@ const FaqMain = () => {
   const items = [
     {
       id: 'a',
-      btnText: 'Why do students prefer online learning?',
+      btnText: 'Where is Ever Green Senior Secondary School located?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Ever Green Senior Secondary School is located at Sri Ganga Vihar Colony, Beri Parao, P.O. Motahaldu, Haldwani, District Nainital, Uttarakhand (263139). The campus is connected to nearby areas and can be reached by school transport on approved routes.',
       faqImage: faqImg,
     },
     {
       id: 'b',
-      btnText: 'Where should I study abroad?',
+      btnText: 'Which board is the school affiliated to?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'The school is affiliated to CBSE, New Delhi, and follows CBSE curriculum and examination guidelines. Academic planning, periodic tests, practical work, and board exam preparation are aligned with CBSE standards.',
       faqImage: faqImg,
     },
     {
       id: 'c',
-      btnText: 'How can I contact a school directly?',
+      btnText: 'How can I apply for admission?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Parents can visit the school office during working hours to collect the admission form and counselling details. Admission is processed as per seat availability, required documents, and school admission policy. You can also check the Forms page for downloadable documents.',
       faqImage: faqImg,
     },
     {
       id: 'd',
-      btnText: 'How do I find a school where I want to study?',
+      btnText: 'Does the school provide transport facility?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Yes, school bus transport is available on selected routes. Bus allotment and fee details are shared by the school office, and parents must follow transport discipline and pickup/drop timing instructions for student safety.',
       faqImage: faqImg,
     },
     {
       id: 'e',
-      btnText: 'How do I find a school where I want to study?',
+      btnText: 'Where can I check fee structure and book list?',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'You can open the Fee Structure and Book List pages from the website menu under Pages. Both pages include View and Download options so parents can quickly access official PDF documents for the current session.',
+      faqImage: faqImg,
+    },
+    {
+      id: 'f',
+      btnText: 'How can parents contact the school for support?',
+      description:
+        'For general queries, parents can contact the school office at (05946) 292491, 9997182574, or 8958851161, or write to evergreenpublicschool42@yahoo.in. Visiting hours and meeting schedules with academic coordinators can be confirmed from the office.',
       faqImage: faqImg,
     },
   ];
   return (
     <main>
-      <Breadcrumb title="Faqs" />
+      <Breadcrumb title="FAQ" />
 
       <div className="it-faq-area p-relative pt-120 pb-120">
         <div className="container">

@@ -9,11 +9,17 @@ import LoadTop from '../components/ScrollToTop/LoadTop';
 
 import {
   About,
+  AboutAimsObjectives,
+  AboutFacilities,
+  AboutForms,
+  AboutSchoolCurriculum,
+  AboutSociety,
   Blog,
   BlogDetails,
   BlogSidebar,
   BlogTwo,
   Cart,
+  Chairman,
   Checkout,
   Contact,
   CourseDetails,
@@ -22,7 +28,11 @@ import {
   Error,
   Event,
   EventDetails,
+  EProspectus,
   Faq,
+  FeeStructure,
+  BookList,
+  Founder,
   Home,
   HomeFive,
   HomeFiveOnePage,
@@ -34,7 +44,15 @@ import {
   HomeTwo,
   HomeTwoOnePage,
   InstructorRegistration,
+  MandatoryPublicDisclosure,
+  ManagingDirectorMessage,
   Price,
+  PrincipalMessage,
+  RulesAdmission,
+  RulesDiscipline,
+  RulesFees,
+  RulesUniform,
+  RulesWithdrawal,
   Service,
   ServiceDetails,
   ServiceThree,
@@ -43,10 +61,14 @@ import {
   ShopDetails,
   SignIn,
   SignUp,
+  Smc,
   StudentRegistration,
   Teacher,
   TeacherDetails,
   Testimonial,
+  ToppersClassX,
+  ToppersClassXII,
+  VicePrincipalMessage,
 } from '../pages';
 
 function App() {
@@ -82,6 +104,38 @@ function App() {
         <Route path="/home-5" element={<HomeFive />} />
         <Route path="/home-5-one-page" element={<HomeFiveOnePage />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/about-society" element={<AboutSociety />} />
+        <Route path="/about-aims-objectives" element={<AboutAimsObjectives />} />
+        <Route
+          path="/about-school-curriculum"
+          element={<AboutSchoolCurriculum />}
+        />
+        <Route path="/about-facilities" element={<AboutFacilities />} />
+        <Route path="/about-forms" element={<AboutForms />} />
+        <Route
+          path="/mandatory-public-disclosure"
+          element={<MandatoryPublicDisclosure />}
+        />
+        <Route path="/e-prospectus" element={<EProspectus />} />
+        <Route path="/smc" element={<Smc />} />
+        <Route path="/rules-discipline" element={<RulesDiscipline />} />
+        <Route path="/rules-admission" element={<RulesAdmission />} />
+        <Route path="/rules-withdrawal" element={<RulesWithdrawal />} />
+        <Route path="/rules-uniform" element={<RulesUniform />} />
+        <Route path="/rules-fees" element={<RulesFees />} />
+        <Route path="/toppers-class-x" element={<ToppersClassX />} />
+        <Route path="/toppers-class-xii" element={<ToppersClassXII />} />
+        <Route path="/our-founder" element={<Founder />} />
+        <Route path="/chairmans-message" element={<Chairman />} />
+        <Route
+          path="/managing-directors-message"
+          element={<ManagingDirectorMessage />}
+        />
+        <Route path="/principals-message" element={<PrincipalMessage />} />
+        <Route
+          path="/vice-principals-message"
+          element={<VicePrincipalMessage />}
+        />
         <Route path="/course-1" element={<CourseOne />} />
         <Route path="/course-2" element={<CourseTwo />} />
         <Route path="/course-details" element={<CourseDetails />} />
@@ -100,6 +154,8 @@ function App() {
         <Route path="/student-registration" element={<StudentRegistration />} />
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/fee-structure" element={<FeeStructure />} />
+        <Route path="/book-list" element={<BookList />} />
         <Route path="/price" element={<Price />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop-details" element={<ShopDetails />} />

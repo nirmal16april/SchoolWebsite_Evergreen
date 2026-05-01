@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterTwo from '../../components/Footer/FooterTwo';
+import Footer from '../../components/Footer';
 import HeaderTwo from '../../components/Header/HeaderTwo';
 import HomeTwoMain from './HomeTwoMain';
 
@@ -8,7 +8,7 @@ const HomeTwo = () => {
     <>
       <HeaderTwo />
       <HomeTwoMain />
-      <FooterTwo />
+      <Footer footerClass="it-footer-area it-footer-bg ed-footer-style-2 black-bg pt-120 pb-70" copyrightTextClass="it-copyright-text style-3 text-center" />
     </>
   );
 };

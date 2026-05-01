@@ -18,13 +18,13 @@ const HomeFiveMain = () => {
       <Feature />
       <About />
       <CTA />
-      <Course />
+      {/* <Course /> */}
       <WhyChooseUs />
       <Testimonial />
       <Video />
       <FAQ />
       <Work />
-      <Blog />
+      {/* <Blog /> */}
     </main>
   );
 };

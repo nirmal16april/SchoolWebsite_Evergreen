@@ -42,7 +42,7 @@ const Testimonial = () => {
               <SectionTitle
                 itemClass="it-testimonial-title-box text-center"
                 subTitle="testimonial"
-                title="Creating A Community Of Life Long Learners."
+                title="Happy Parents"
               />
             </div>
           </div>
@@ -58,42 +58,42 @@ const Testimonial = () => {
                 >
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonial
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua.
-                          Orci nulla pellentesque dignissim enim. Amet
-                          consectetur adipiscing”`}
-                      authorName="Ellen Perera"
-                      designation="CEO at House of Ramen"
+                      description={`“Our children feel loved, safe, and are learning and
+                          growing in spiritual and academic areas of their life.
+                          The faculty and administration are wonderful and
+                          dedicated.”`}
+                      authorName="Mr. Sandeep"
+                      designation="Father"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonial
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua.
-                          Orci nulla pellentesque dignissim enim. Amet
-                          consectetur adipiscing”`}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
+                      description={`“Ever Green Sr. Sec. School gives parents so many
+                          opportunities to be involved with their kids in many
+                          aspects of their education and school functions.”`}
+                      authorName="Mrs. Riya"
+                      designation="Mother"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonial
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua.
-                          Orci nulla pellentesque dignissim enim. Amet
-                          consectetur adipiscing”`}
-                      authorName="Elsie Stroud"
-                      designation="CEO at Edwards"
+                      description={`“Ever Green Sr. Sec. School has a strong sense of
+                          community, high standards for academics, and
+                          well-mannered students. It is academically challenging,
+                          while also emphasizing good choices and respect for
+                          others.”`}
+                      authorName="Mrs. Natasha"
+                      designation="Mother"
                     />
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
                     <SingleTestimonial
-                      description={`“Lorem ipsum dolor sit amet, elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua.
-                          Orci nulla pellentesque dignissim enim. Amet
-                          consectetur adipiscing”`}
-                      authorName="Kathy Sullivan"
-                      designation="CEO at ordian it"
+                      description={`“I respect and admire the teachers and staff at Ever
+                          Green Sr. Sec. School. My children were always given
+                          priority, encouragement, and support throughout their
+                          academic development, and every teacher was approachable.”`}
+                      authorName="Mr. Vivek"
+                      designation="Father"
                     />
                   </SwiperSlide>
                 </Swiper>

@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import MenuItemsOnePage from './MenuItemsOnePage';
+import {
+  EvergreenOffcanvasGetInTouch,
+  EvergreenOffcanvasIntro,
+} from './EvergreenOffcanvasSchoolInfo';
 import RightArrow from '../SVG';
 import OffCanvasInsta from '../OffCanvas';
 
-import Logo from '../../assets/img/logo/logo-black.png';
+import Logo from '../../assets/img/logo/logo.svg';
 import svgImg1 from '../../assets/img/header/1.svg';
 import svgImg2 from '../../assets/img/header/2.svg';
 import svgImg3 from '../../assets/img/header/3.svg';
@@ -183,7 +187,7 @@ const Header = (props) => {
                 <div className="col-xxl-3 col-xl-2 col-lg-3 col-lg-6 col-md-6 col-6 col-sm-4">
                   <div className="ed-header-logo">
                     <Link to="/">
-                      <img src={headerLogo ? headerLogo : Logo} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                 </div>
@@ -256,12 +260,7 @@ const Header = (props) => {
               <img src={Logo} alt="" />
             </Link>
           </div>
-          <div className="itoffcanvas__text">
-            <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
-            </p>
-          </div>
+          <EvergreenOffcanvasIntro />
           <div className="it-menu-mobile d-xl-none">
             {!onePage ? (
               <MenuItems mobileMenu="show" />
@@ -273,47 +272,7 @@ const Header = (props) => {
               />
             )}
           </div>
-          <div className="itoffcanvas__info">
-            <h3 className="offcanva-title">Get In Touch</h3>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fal fa-envelope"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
-              </div>
-            </div>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fal fa-phone-alt"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
-              </div>
-            </div>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fas fa-map-marker-alt"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Location</span>
-                <a
-                  href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
-                  target="_blank"
-                >
-                  Riverside 255, San Francisco.
-                </a>
-              </div>
-            </div>
-          </div>
+          <EvergreenOffcanvasGetInTouch />
           <OffCanvasInsta />
         </div>
       </div>

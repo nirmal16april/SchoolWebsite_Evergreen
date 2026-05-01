@@ -5,29 +5,29 @@ import funFactBG from '../../assets/img/funfact/funfact-bg.png';
 
 const FunFact = () => {
   const counters = [
-    {
-      countIcon: 'flaticon-teacher',
-      countNum: 3,
-      countSubtext: 'K+',
-      countTitle: 'Successfully Trained',
-    },
+    // {
+    //   countIcon: 'flaticon-teacher',
+    //   countNum: 3,
+    //   countSubtext: 'K+',
+    //   countTitle: 'Successfully Trained',
+    // },
     {
       countIcon: 'flaticon-completed-task',
-      countNum: 15,
-      countSubtext: 'K+',
-      countTitle: 'Classes Completed',
+      countNum: 113,
+      countSubtext: '+',
+      countTitle: 'Teacher & Staffs',
     },
     {
       countIcon: 'flaticon-customer-review',
-      countNum: 97,
-      countSubtext: 'K+',
-      countTitle: 'Satisfaction Rate',
+      countNum: 69,
+      countSubtext: '+',
+      countTitle: 'Total Classrooms',
     },
     {
       countIcon: 'flaticon-class',
-      countNum: 102,
+      countNum: 1.5,
       countSubtext: 'K+',
-      countTitle: 'Students Community',
+      countTitle: 'Total Students',
     },
   ];
   return (

@@ -47,13 +47,13 @@ const About = () => {
                 <img src={titleImg} alt=""></img> about us
               </span>
               <h2 className="it-section-title-3 pb-30">
-                Benefit from our online learning expertise earn{' '}
-                <span>professional</span>
+                Welcome to <span>Ever Green Senior Secondary School</span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                <br />
-                eiusmod tempor incididunt ut labore.
+                Ever Green Senior Secondary School was established on 13th July
+                1996 by Mr. L. D. Pathak in Haldwani, Uttarakhand. The school is
+                a premier English medium institution affiliated to C.B.S.E., New
+                Delhi and owned by Educational Welfare Society, Tularampur.
               </p>
             </div>
             <div className="it-about-3-mv-box">
@@ -62,17 +62,19 @@ const About = () => {
                   <div className="it-about-3-mv-item">
                     <span className="it-about-3-mv-title">OUR MISSION:</span>
                     <p>
-                      Suspendisse ultrice gravida dictum fusce placerat
-                      ultricies integer quis auctor elit sed vulputate mi sit.
+                      To emerge as a role model in holistic, value-based and
+                      exploratory learning, creating self-motivated learners and
+                      responsible future citizens.
                     </p>
                   </div>
                 </div>
                 <div className="col-xl-6 col-md-6">
                   <div className="it-about-3-mv-item">
-                    <span className="it-about-3-mv-title">OUR VISSION:</span>
+                    <span className="it-about-3-mv-title">OUR VISION:</span>
                     <p>
-                      Suspendisse ultrice gravida dictum fusce placerat
-                      ultricies integer quis auctor elit sed vulputate mi sit.
+                      To create leaders of tomorrow with intuitive capabilities,
+                      integrity, and a lasting appreciation for learning in a
+                      secure and creative environment.
                     </p>
                   </div>
                 </div>

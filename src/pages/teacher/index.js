@@ -1,9 +1,7 @@
 import React from 'react';
-import FooterTwo from '../../components/Footer/FooterTwo';
+import Footer from '../../components/Footer';
 import HeaderFive from '../../components/Header/HeaderFive';
 import TeacherMain from './TeacherMain';
-
-import Logo from '../../assets/img/logo/logo-white-2.png';
 
 const Teacher = () => {
   return (
@@ -12,11 +10,9 @@ const Teacher = () => {
 
       <TeacherMain />
 
-      <FooterTwo
-        footerClass="it-footer-area it-footer-bg it-footer-style-5 ed-footer-style-5 inner-style black-bg pb-70"
-        footerLogo={Logo}
-        btnClass="it-btn-white sky-bg"
-        copyrightTextClass="it-copyright-text inner-style text-center"
+      <Footer
+        footerClass="it-footer-area it-footer-bg ed-footer-style-2 black-bg pt-120 pb-70"
+        copyrightTextClass="it-copyright-text style-3 text-center"
       />
     </>
   );

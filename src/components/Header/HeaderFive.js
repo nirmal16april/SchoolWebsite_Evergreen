@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import MenuItemsOnePage from './MenuItemsOnePage';
+import {
+  EvergreenOffcanvasGetInTouch,
+  EvergreenOffcanvasIntro,
+} from './EvergreenOffcanvasSchoolInfo';
 import OffCanvasInsta from '../OffCanvas';
 
-import LogoWhite from '../../assets/img/logo/logo-white-2.png';
-import Logo from '../../assets/img/logo/logo-black.png';
+import Logo from '../../assets/img/logo/logo.svg';
 import phoneSVG from '../../assets/img/footer/1.svg';
 import mailSVG from '../../assets/img/footer/2.svg';
 
@@ -42,7 +45,7 @@ const HeaderFive = (props) => {
                 <div className="search__top d-flex justify-content-between align-items-center">
                   <div className="search__logo">
                     <Link to="/">
-                      <img src={LogoWhite} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                   <div className="search__close">
@@ -170,20 +173,20 @@ const HeaderFive = (props) => {
               <div className="col-xl-6 col-lg-8 col-md-8 d-none d-sm-block col-sm-9">
                 <div className="ed-header-top-5-right text-end">
                   <ul>
-                    <li>
-                  Portal
+                    <li className="d-none d-lg-inline-block">
+                      <Link to="/e-prospectus">E-Prospectus</Link>
+                    </li>
+                    <li className="d-none d-md-inline-block">
+                      <Link to="/about-forms">Forms</Link>
+                    </li>
+                    <li className="d-none d-md-inline-block">
+                      <Link to="/mandatory-public-disclosure">Disclosure</Link>
                     </li>
                     <li className="d-none d-lg-inline-block">
-                      <a href="#">Calendar</a>
-                    </li>
-                    <li className="d-none d-md-inline-block">
-                      <a href="#">Alumni</a>
-                    </li>
-                    <li className="d-none d-md-inline-block">
-                      <a href="#">Events</a>
+                      <Link to="/faq">FAQ</Link>
                     </li>
                     <li>
-                      <a href="#">Contact us</a>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </div>
@@ -206,7 +209,7 @@ const HeaderFive = (props) => {
                 <div className="col-xl-2 col-lg-6 col-md-6 col-6">
                   <div className="ed-header-5-logo">
                     <Link to="/">
-                      <img src={headerLogo ? headerLogo : Logo} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                 </div>
@@ -290,12 +293,7 @@ const HeaderFive = (props) => {
               <img src={Logo} alt="" />
             </Link>
           </div>
-          <div className="itoffcanvas__text">
-            <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
-            </p>
-          </div>
+          <EvergreenOffcanvasIntro />
           <div className="it-menu-mobile d-xl-none">
             {!onePage ? (
               <MenuItems mobileMenu="show" />
@@ -307,47 +305,7 @@ const HeaderFive = (props) => {
               />
             )}
           </div>
-          <div className="itoffcanvas__info">
-            <h3 className="offcanva-title">Get In Touch</h3>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fal fa-envelope"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
-              </div>
-            </div>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fal fa-phone-alt"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
-              </div>
-            </div>
-            <div className="it-info-wrapper mb-20 d-flex align-items-center">
-              <div className="itoffcanvas__info-icon">
-                <a href="#">
-                  <i className="fas fa-map-marker-alt"></i>
-                </a>
-              </div>
-              <div className="itoffcanvas__info-address">
-                <span>Location</span>
-                <a
-                  href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
-                  target="_blank"
-                >
-                  Riverside 255, San Francisco.
-                </a>
-              </div>
-            </div>
-          </div>
+          <EvergreenOffcanvasGetInTouch />
           <OffCanvasInsta />
         </div>
       </div>

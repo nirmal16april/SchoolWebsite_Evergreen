@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import footerBG from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white-2.png';
+import Logo from '../../assets/img/logo/logo.svg';
 import footerImg1 from '../../assets/img/footer/thumb-1-1.png';
 import footerImg2 from '../../assets/img/footer/thumb-1-2.png';
 import footerImg3 from '../../assets/img/footer/thumb-1-3.png';
@@ -11,7 +11,7 @@ import footerImg5 from '../../assets/img/footer/thumb-1-5.png';
 import footerImg6 from '../../assets/img/footer/thumb-1-6.png';
 
 const FooterTwo = (props) => {
-  const { footerClass, footerLogo, btnClass, copyrightTextClass } = props;
+  const { footerClass, btnClass, copyrightTextClass } = props;
 
   return (
     <footer>
@@ -84,7 +84,7 @@ const FooterTwo = (props) => {
                 <div className="it-footer-widget footer-col-5">
                   <div className="it-footer-logo pb-25">
                     <Link to="/">
-                      <img src={footerLogo ? footerLogo : Logo} alt="" />
+                      <img src={Logo} alt="" />
                     </Link>
                   </div>
                   <div className="it-footer-text pb-5">

@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+context_evergreen.md
+image-usage-report.csv
+
