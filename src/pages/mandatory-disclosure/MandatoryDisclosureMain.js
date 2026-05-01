@@ -1,17 +1,35 @@
 import React from 'react';
 import AboutInnerPage from '../about/AboutInnerPage';
 
-const PdfLink = ({ file, label = 'View PDF' }) => (
-  <a
-    href={`/disclosure/${file}`}
-    className="disclosure-pdf-link"
-    target="_blank"
-    rel="noopener noreferrer"
-    title={`Open PDF: ${file}`}
-  >
-    <i className="fa-light fa-file-pdf" aria-hidden="true" /> {label}
-  </a>
-);
+const PdfActions = ({ file }) => {
+  const href = `/disclosure/${file}`;
+  return (
+    <span className="disclosure-pdf-actions">
+      <a
+        href={href}
+        className="disclosure-pdf-link disclosure-pdf-view"
+        target="_blank"
+        rel="noopener noreferrer"
+        title={`View in browser: ${file}`}
+      >
+        <i className="fa-light fa-eye" aria-hidden="true" /> View
+      </a>
+      <span className="disclosure-pdf-divider" aria-hidden="true">
+        |
+      </span>
+      <a
+        href={href}
+        className="disclosure-pdf-link disclosure-pdf-download"
+        download={file}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={`Download: ${file}`}
+      >
+        <i className="fa-light fa-download" aria-hidden="true" /> Download
+      </a>
+    </span>
+  );
+};
 
 const MandatoryDisclosureMain = () => {
   return (
@@ -23,10 +41,9 @@ const MandatoryDisclosureMain = () => {
       greyBg={false}
     >
       <p className="text-center mb-50">
-        The following particulars are published for public information as per
-        CBSE norms. Official documents can be added under{' '}
-        <code className="disclosure-code">public/disclosure/</code> using the
-        file names linked below (each link opens the PDF in a new tab).
+        Access essential school information and documents in one place. Where PDFs
+        are listed, use <strong>View</strong> to open them in your browser (web
+        view) or <strong>Download</strong> to save a copy.
       </p>
 
       <div className="disclosure-section">
@@ -109,7 +126,7 @@ const MandatoryDisclosureMain = () => {
                   of Affiliation, if any
                 </td>
                 <td>
-                  <PdfLink file="affiliation-letter.pdf" />
+                  <PdfActions file="affiliation-letter.pdf" />
                 </td>
               </tr>
               <tr>
@@ -119,7 +136,7 @@ const MandatoryDisclosureMain = () => {
                   Certificate, as applicable
                 </td>
                 <td>
-                  <PdfLink file="society-trust-registration.pdf" />
+                  <PdfActions file="society-trust-registration.pdf" />
                 </td>
               </tr>
               <tr>
@@ -129,7 +146,7 @@ const MandatoryDisclosureMain = () => {
                   by the State Govt./UT
                 </td>
                 <td>
-                  <PdfLink file="noc-state-govt.pdf" />
+                  <PdfActions file="noc-state-govt.pdf" />
                 </td>
               </tr>
               <tr>
@@ -139,7 +156,7 @@ const MandatoryDisclosureMain = () => {
                   its Renewal if applicable
                 </td>
                 <td>
-                  <PdfLink file="rte-recognition.pdf" />
+                  <PdfActions file="rte-recognition.pdf" />
                 </td>
               </tr>
               <tr>
@@ -149,7 +166,7 @@ const MandatoryDisclosureMain = () => {
                   Building Code
                 </td>
                 <td>
-                  <PdfLink file="building-safety.pdf" />
+                  <PdfActions file="building-safety.pdf" />
                 </td>
               </tr>
               <tr>
@@ -159,7 +176,7 @@ const MandatoryDisclosureMain = () => {
                   Authority
                 </td>
                 <td>
-                  <PdfLink file="fire-safety.pdf" />
+                  <PdfActions file="fire-safety.pdf" />
                 </td>
               </tr>
               <tr>
@@ -170,7 +187,7 @@ const MandatoryDisclosureMain = () => {
                   Certification by School
                 </td>
                 <td>
-                  <PdfLink file="deo-certificate.pdf" />
+                  <PdfActions file="deo-certificate.pdf" />
                 </td>
               </tr>
               <tr>
@@ -179,21 +196,21 @@ const MandatoryDisclosureMain = () => {
                   Copies of Valid Water, Health and Sanitation Certificates
                 </td>
                 <td>
-                  <PdfLink file="water-health-sanitation.pdf" />
+                  <PdfActions file="water-health-sanitation.pdf" />
                 </td>
               </tr>
               <tr>
                 <td>9</td>
                 <td>Copies of Land Certificates</td>
                 <td>
-                  <PdfLink file="land-certificate.pdf" />
+                  <PdfActions file="land-certificate.pdf" />
                 </td>
               </tr>
               <tr>
                 <td>10</td>
                 <td>Copy of Mandatory Information as per CBSE Circular</td>
                 <td>
-                  <PdfLink file="cbse-mandatory-circular.pdf" />
+                  <PdfActions file="cbse-mandatory-circular.pdf" />
                 </td>
               </tr>
             </tbody>
@@ -217,28 +234,28 @@ const MandatoryDisclosureMain = () => {
                 <td>1</td>
                 <td>Fee Structure of School</td>
                 <td>
-                  <PdfLink file="fee-structure.pdf" />
+                  <PdfActions file="fee-structure.pdf" />
                 </td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Annual Academic Calendar</td>
                 <td>
-                  <PdfLink file="academic-calendar.pdf" />
+                  <PdfActions file="academic-calendar.pdf" />
                 </td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>List of School Management Committee (SMC)</td>
                 <td>
-                  <PdfLink file="smc-list.pdf" />
+                  <PdfActions file="smc-list.pdf" />
                 </td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>List of Parents Teachers Association (PTA) Members</td>
                 <td>
-                  <PdfLink file="pta-members.pdf" />
+                  <PdfActions file="pta-members.pdf" />
                 </td>
               </tr>
               <tr>
@@ -248,7 +265,7 @@ const MandatoryDisclosureMain = () => {
                   Applicability
                 </td>
                 <td>
-                  <PdfLink file="board-exam-results.pdf" />
+                  <PdfActions file="board-exam-results.pdf" />
                 </td>
               </tr>
             </tbody>
@@ -384,10 +401,7 @@ const MandatoryDisclosureMain = () => {
                   >
                     Ever Green Senior Secondary School — YouTube
                   </a>
-                  <span className="disclosure-note d-block mt-10">
-                    Replace this link with the specific CBSE inspection video URL
-                    when available.
-                  </span>
+                 
                 </td>
               </tr>
             </tbody>

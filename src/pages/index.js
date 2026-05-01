@@ -13,7 +13,17 @@ import AboutSociety from './about-society';
 import AboutAimsObjectives from './about-aims-objectives';
 import AboutSchoolCurriculum from './about-school-curriculum';
 import AboutFacilities from './about-facilities';
+import AboutForms from './about-forms';
 import MandatoryPublicDisclosure from './mandatory-disclosure';
+import EProspectus from './e-prospectus';
+import Smc from './smc';
+import RulesDiscipline from './rules-discipline';
+import RulesAdmission from './rules-admission';
+import RulesWithdrawal from './rules-withdrawal';
+import RulesUniform from './rules-uniform';
+import RulesFees from './rules-fees';
+import ToppersClassX from './toppers-class-x';
+import ToppersClassXII from './toppers-class-xii';
 import Founder from './founder';
 import Chairman from './Chairman/Chairman';
 import ManagingDirectorMessage from './managing-director';
@@ -34,6 +44,8 @@ import ServiceDetails from './service/service-details';
 import StudentRegistration from './student';
 import Testimonial from './testimonial';
 import Faq from './faq';
+import FeeStructure from './fee-structure';
+import BookList from './book-list';
 import Price from './price';
 import Shop from './shop';
 import ShopDetails from './shop/shop-details';
@@ -64,7 +76,17 @@ export {
   AboutAimsObjectives,
   AboutSchoolCurriculum,
   AboutFacilities,
+  AboutForms,
   MandatoryPublicDisclosure,
+  EProspectus,
+  Smc,
+  RulesDiscipline,
+  RulesAdmission,
+  RulesWithdrawal,
+  RulesUniform,
+  RulesFees,
+  ToppersClassX,
+  ToppersClassXII,
   Founder,
   Chairman,
   ManagingDirectorMessage,
@@ -85,6 +107,8 @@ export {
   StudentRegistration,
   Testimonial,
   Faq,
+  FeeStructure,
+  BookList,
   Price,
   Shop,
   ShopDetails,

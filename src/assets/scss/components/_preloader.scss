@@ -187,11 +187,196 @@ padding-bottom: 10px;
   90% { width: 40px; height: 15px; }
   95% { left: 100px; top: -20px; width: 20px; height: 20px;}
   100% { left: 100px; top:0; }
-}	
-  
+}
 
-  
-  
+@keyframes evergreen-preloader-logo {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.88;
+  }
+}
+
+@keyframes evergreen-preloader-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(35%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#it-loading.evergreen-preloader {
+  background: linear-gradient(
+    155deg,
+    #f8fffc 0%,
+    #eefcfb 38%,
+    #f5f9ff 72%,
+    #ffffff 100%
+  );
+  overflow: hidden;
+}
+
+.evergreen-preloader #it-loading-center.evergreen-preloader__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.evergreen-preloader__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(0, 140, 130, 0.14) 0, transparent 42%),
+    radial-gradient(circle at 82% 78%, rgba(14, 165, 233, 0.1) 0, transparent 45%);
+  opacity: 1;
+}
+
+.evergreen-preloader #it-loading-absolute.evergreen-preloader__absolute {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: 100%;
+  max-width: min(400px, 92vw);
+  padding: 0 28px;
+}
+
+.evergreen-preloader__content {
+  position: relative;
+  padding: 8px 0 8px;
+  text-align: center;
+}
+
+.evergreen-preloader__brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 26px;
+  min-height: 112px;
+}
+
+.evergreen-preloader__logo-shell {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  width: min(304px, 88vw);
+  height: min(112px, 18vh);
+  min-height: 88px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 140, 130, 0.12);
+  box-shadow:
+    0 14px 40px rgba(15, 39, 68, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+}
+
+.evergreen-preloader__logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-inline: auto;
+  width: min(264px, 76vw) !important;
+  max-width: min(264px, 76vw);
+  height: auto;
+  max-height: min(88px, 13vh);
+  object-fit: contain;
+  object-position: center center;
+  filter: drop-shadow(0 6px 18px rgba(15, 39, 68, 0.1));
+  animation: evergreen-preloader-logo 2s ease-in-out infinite;
+}
+
+@media (min-width: 576px) {
+  .evergreen-preloader__logo {
+    width: min(288px, 72vw) !important;
+    max-width: min(288px, 72vw);
+    max-height: min(96px, 14vh);
+  }
+  .evergreen-preloader__logo-shell {
+    width: min(328px, 88vw);
+    height: min(120px, 16vh);
+    min-height: 96px;
+  }
+}
+
+@media (min-width: 992px) {
+  .evergreen-preloader__logo {
+    width: 300px !important;
+    max-width: 300px;
+    max-height: 96px;
+  }
+  .evergreen-preloader__logo-shell {
+    width: 336px;
+    height: 124px;
+    min-height: 100px;
+  }
+}
+
+.evergreen-preloader__title {
+  font-family: var(--it-ff-heading);
+  font-size: clamp(17px, 2.8vw, 22px);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.evergreen-preloader__hint {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0 0 22px;
+  letter-spacing: 0.02em;
+}
+
+.evergreen-preloader__track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(15, 39, 68, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.evergreen-preloader__track-fill {
+  display: block;
+  height: 100%;
+  width: 42%;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--it-theme-2),
+    rgba(14, 165, 233, 0.85),
+    transparent
+  );
+  animation: evergreen-preloader-bar 1.35s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #it-loading.evergreen-preloader .evergreen-preloader__logo,
+  #it-loading.evergreen-preloader .evergreen-preloader__track-fill {
+    animation: none !important;
+  }
+  #it-loading.evergreen-preloader .evergreen-preloader__track-fill {
+    transform: translateX(0);
+    width: 60%;
+    margin: 0 auto;
+    opacity: 0.85;
+  }
+}
+
   /*--- end of preloader ---*/
 
 

@@ -4,6 +4,12 @@ import emailjs from '@emailjs/browser';
 
 import shapeImg from '../../assets/img/contact/shape-2-1.png';
 
+const MAP_EMBED_SRC =
+  'https://www.google.com/maps?cid=18409507374368258856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&gl=IN&source=embed&output=embed';
+
+const MAP_LINK =
+  'https://www.google.com/maps?cid=18409507374368258856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&gl=IN&source=embed';
+
 const ContactMain = () => {
   const formRef = useRef();
 
@@ -27,140 +33,202 @@ const ContactMain = () => {
     <main>
       <Breadcrumb title="Contact Us" />
 
-      <div className="it-contact__area pt-120 pb-120">
+      <div className="it-contact__area evergreen-contact pt-120 pb-120">
         <div className="container">
           <div className="it-contact__wrap fix z-index-3 p-relative">
             <div className="it-contact__shape-1 d-none d-xl-block">
               <img src={shapeImg} alt="" />
             </div>
-            <div className="row align-items-end">
-              <div className="col-xl-7">
-                <div className="it-contact__right-box">
-                  <div className="it-contact__section-box pb-20">
-                    <h4 className="it-contact__title pb-15">Get in Touch</h4>
-                    <p>
-                      Suspendisse ultrice gravida dictum fusce placerat <br />
-                      ultricies integer{' '}
+
+            <div className="row justify-content-center mb-45">
+              <div className="col-xl-10 text-center">
+                <span className="evergreen-contact__eyebrow">
+                  Evergreen Help Desk
+                </span>
+                <h4 className="it-contact__title pb-15">
+                  Contact Ever Green Senior Secondary School
+                </h4>
+                <p className="evergreen-contact__intro-lead mb-0">
+                  Reach our school office for admissions, transport, fee details,
+                  and general academic support. We are happy to help parents and
+                  students.
+                </p>
+              </div>
+            </div>
+
+            <div className="row justify-content-center mb-45">
+              <div className="col-xl-10 col-lg-11">
+                <div className="it-contact__form-box evergreen-contact__form-card">
+                  <div className="evergreen-contact__form-head text-center mb-25">
+                    <h5 className="evergreen-contact__form-head-title mb-5">
+                      Send us a message
+                    </h5>
+                    <p className="evergreen-contact__form-head-text mb-0">
+                      Share your query and we will get back to you as soon as
+                      possible.
                     </p>
                   </div>
-                  <div className="it-contact__content mb-55">
-                    <ul>
-                      <li>
-                        <div className="it-contact__list d-flex align-items-start">
-                          <div className="it-contact__icon">
-                            <span>
-                              <i className="fa-solid fa-location-dot"></i>
-                            </span>
-                          </div>
-                          <div className="it-contact__text">
-                            <span>Our Address</span>
-                            <a
-                              target="_blank"
-                              href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttup"
-                            >
-                              1564 Goosetown Drive <br />
-                              Matthews, NC 28105
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="it-contact__list d-flex align-items-start">
-                          <div className="it-contact__icon">
-                            <span>
-                              <i className="fa-solid fa-clock"></i>
-                            </span>
-                          </div>
-                          <div className="it-contact__text">
-                            <span>Hours of Operation</span>
-                            <a href="#">Mon - Fri: 9.00am to 5.00pm</a>
-                            <span>[2nd sat Holiday]</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="it-contact__list d-flex align-items-start">
-                          <div className="it-contact__icon">
-                            <span>
-                              <i className="fa-solid fa-phone phone"></i>
-                            </span>
-                          </div>
-                          <div className="it-contact__text">
-                            <span>contact</span>
-                            <a href="tel:+99358954565">+99- 35895-4565</a>
-                            <a href="mailto:supportyou@info.com">
-                              supportyou@info.com
-                            </a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="it-contact__bottom-box d-flex align-items-center justify-content-between">
-                    <div className="it-contact__scrool smooth">
-                      <a href="#">
-                        <i className="fa-solid fa-arrow-down"></i>Customer Care
-                      </a>
-                    </div>
-                    <div className="it-footer-social">
-                      <a href="#">
-                        <i className="fa-brands fa-facebook-f"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-pinterest-p"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fa-brands fa-twitter"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5">
-                <div className="it-contact__form-box">
                   <form ref={formRef} onSubmit={handleSubmit}>
                     <div className="row">
-                      <div className="col-12 mb-25">
+                      <div className="col-md-6 mb-25">
                         <div className="it-contact-input-box">
                           <label>Name*</label>
-                          <input type="text" placeholder="Name" />
+                          <input type="text" placeholder="Student / Parent Name" />
                         </div>
                       </div>
-                      <div className="col-12 mb-25">
+                      <div className="col-md-6 mb-25">
                         <div className="it-contact-input-box">
                           <label>Email Address*</label>
-                          <input type="email" placeholder="Email" />
+                          <input type="email" placeholder="example@email.com" />
                         </div>
                       </div>
-                      <div className="col-12 mb-25">
+                      <div className="col-md-6 mb-25">
                         <div className="it-contact-input-box">
                           <label>Phone*</label>
-                          <input type="text" placeholder="Phone" />
+                          <input type="text" placeholder="Mobile Number" />
                         </div>
                       </div>
-                      <div className="col-12 mb-25">
+                      <div className="col-md-6 mb-25">
                         <div className="it-contact-input-box">
                           <label>Subject*</label>
-                          <input type="text" placeholder="Subject" />
+                          <input
+                            type="text"
+                            placeholder="Admission / Transport / Fee / Other"
+                          />
                         </div>
                       </div>
                       <div className="col-12 mb-25">
                         <div className="it-contact-textarea-box">
                           <label>Message</label>
-                          <textarea placeholder="Message"></textarea>
+                          <textarea placeholder="Write your query here" />
                         </div>
                       </div>
                     </div>
                     <button
                       type="submit"
-                      className="ed-btn-square radius purple-4"
+                      className="ed-btn-square radius purple-4 evergreen-contact__submit"
                     >
                       <span>Send Message</span>
                     </button>
                   </form>
+                </div>
+              </div>
+            </div>
+
+            <div className="row g-4 justify-content-center mb-40">
+              <div className="col-lg-5">
+                <div className="evergreen-contact__panel-title">
+                  <i className="fa-solid fa-address-card" aria-hidden="true" />
+                  School details
+                </div>
+                <div className="it-contact__content evergreen-contact__info-card">
+                  <ul>
+                    <li>
+                      <div className="it-contact__list d-flex align-items-start">
+                        <div className="it-contact__icon">
+                          <span>
+                            <i className="fa-solid fa-location-dot" />
+                          </span>
+                        </div>
+                        <div className="it-contact__text">
+                          <span>Campus Address</span>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={MAP_LINK}
+                          >
+                            Sri Ganga Vihar Colony, Beri Parao, <br />
+                            P.O. Motahaldu, Haldwani, Nainital, Uttarakhand
+                            263139
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="it-contact__list d-flex align-items-start">
+                        <div className="it-contact__icon">
+                          <span>
+                            <i className="fa-solid fa-clock" />
+                          </span>
+                        </div>
+                        <div className="it-contact__text">
+                          <span>Office Hours</span>
+                          <span>Mon - Sat: 8:30 AM to 3:30 PM</span>
+                          <span>
+                            Office support available during school hours
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="it-contact__list d-flex align-items-start">
+                        <div className="it-contact__icon">
+                          <span>
+                            <i className="fa-solid fa-phone phone" />
+                          </span>
+                        </div>
+                        <div className="it-contact__text">
+                          <span>Phone &amp; Email</span>
+                          <a href="tel:+915946292491">(05946) 292491</a>
+                          <a href="tel:+919997182574">+91 99971 82574</a>
+                          <a href="tel:+918958851161">+91 89588 51161</a>
+                          <a href="mailto:evergreenpublicschool42@yahoo.in">
+                            evergreenpublicschool42@yahoo.in
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <div className="evergreen-contact__panel-title">
+                  <i className="fa-solid fa-map-location-dot" aria-hidden="true" />
+                  Find us on the map
+                </div>
+                <div className="it-contact-map-box evergreen-contact__map-card">
+                  <iframe
+                    title="Ever Green School Location Map"
+                    src={MAP_EMBED_SRC}
+                    className="evergreen-contact__map-frame"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="row justify-content-center">
+              <div className="col-xl-10">
+                <div className="it-contact__bottom-box d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div className="it-contact__scrool smooth">
+                    <a href="mailto:evergreenpublicschool42@yahoo.in">
+                      <i className="fa-solid fa-envelope" /> Email School Office
+                    </a>
+                  </div>
+                  <div className="it-footer-social">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-facebook-f" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-instagram" />
+                    </a>
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-twitter" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

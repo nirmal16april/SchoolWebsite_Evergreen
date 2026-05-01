@@ -5,6 +5,8 @@ const MenuItems = (props) => {
   const { mobileMenu } = props;
   const [course, setCourse] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [rulesOpen, setRulesOpen] = useState(false);
+  const [toppersOpen, setToppersOpen] = useState(false);
   const [page, setPage] = useState(false);
   const [blog, setBlog] = useState(false);
 
@@ -12,21 +14,43 @@ const MenuItems = (props) => {
     if (menu === 'course') {
       setCourse(!course);
       setAboutOpen(false);
+      setRulesOpen(false);
+      setToppersOpen(false);
       setPage(false);
       setBlog(false);
     } else if (menu === 'about') {
       setCourse(false);
       setAboutOpen(!aboutOpen);
+      setRulesOpen(false);
+      setToppersOpen(false);
+      setPage(false);
+      setBlog(false);
+    } else if (menu === 'rules') {
+      setCourse(false);
+      setAboutOpen(false);
+      setRulesOpen(!rulesOpen);
+      setToppersOpen(false);
+      setPage(false);
+      setBlog(false);
+    } else if (menu === 'toppers') {
+      setCourse(false);
+      setAboutOpen(false);
+      setRulesOpen(false);
+      setToppersOpen(!toppersOpen);
       setPage(false);
       setBlog(false);
     } else if (menu === 'page') {
       setCourse(false);
       setAboutOpen(false);
+      setRulesOpen(false);
+      setToppersOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
       setCourse(false);
       setAboutOpen(false);
+      setRulesOpen(false);
+      setToppersOpen(false);
       setPage(false);
       setBlog(!blog);
     }
@@ -87,9 +111,95 @@ const MenuItems = (props) => {
             <Link to="/about-facilities">Facilities</Link>
           </li>
           <li>
+            <Link to="/about-forms">Forms</Link>
+          </li>
+          <li>
             <Link to="/mandatory-public-disclosure">
               Mandatory Public Disclosure
             </Link>
+          </li>
+          <li>
+            <Link to="/e-prospectus">E-Prospectus</Link>
+          </li>
+          <li>
+            <Link to="/smc">SMC</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="has-dropdown">
+        <Link
+          to="#"
+          className={rulesOpen ? 'expanded' : ''}
+          onClick={handleClick}
+        >
+          <span>Rules</span>
+          <button
+            className={`${
+              rulesOpen
+                ? 'dropdown-toggle-btn dropdown-opened'
+                : 'dropdown-toggle-btn'
+            } d-xl-none`}
+            type="button"
+            onClick={() => {
+              openMobileMenu('rules');
+            }}
+          >
+            <i className="fal fa-angle-right"></i>
+          </button>
+        </Link>
+        <ul
+          className={
+            rulesOpen ? 'it-submenu submenu d-block' : 'it-submenu submenu'
+          }
+        >
+          <li>
+            <Link to="/rules-discipline">Discipline</Link>
+          </li>
+          <li>
+            <Link to="/rules-admission">Admission</Link>
+          </li>
+          <li>
+            <Link to="/rules-withdrawal">Withdrawal</Link>
+          </li>
+          <li>
+            <Link to="/rules-uniform">School Uniform</Link>
+          </li>
+          <li>
+            <Link to="/rules-fees">School Fees</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="has-dropdown">
+        <Link
+          to="#"
+          className={toppersOpen ? 'expanded' : ''}
+          onClick={handleClick}
+        >
+          <span>Toppers</span>
+          <button
+            className={`${
+              toppersOpen
+                ? 'dropdown-toggle-btn dropdown-opened'
+                : 'dropdown-toggle-btn'
+            } d-xl-none`}
+            type="button"
+            onClick={() => {
+              openMobileMenu('toppers');
+            }}
+          >
+            <i className="fal fa-angle-right"></i>
+          </button>
+        </Link>
+        <ul
+          className={
+            toppersOpen ? 'it-submenu submenu d-block' : 'it-submenu submenu'
+          }
+        >
+          <li>
+            <Link to="/toppers-class-x">Class X Toppers</Link>
+          </li>
+          <li>
+            <Link to="/toppers-class-xii">Class XII Toppers</Link>
           </li>
         </ul>
       </li>
@@ -129,7 +239,7 @@ const MenuItems = (props) => {
           </li>
         </ul>
       </li> */}
-      <li className="has-dropdown p-static">
+      <li className="has-dropdown">
         <Link to="#" className={page ? 'expanded' : ''} onClick={handleClick}>
           <span>Pages</span>
           <button
@@ -138,6 +248,7 @@ const MenuItems = (props) => {
                 ? 'dropdown-toggle-btn dropdown-opened'
                 : 'dropdown-toggle-btn'
             } d-xl-none`}
+            type="button"
             onClick={() => {
               openMobileMenu('page');
             }}
@@ -145,117 +256,40 @@ const MenuItems = (props) => {
             <i className="fal fa-angle-right"></i>
           </button>
         </Link>
-        <div
+        <ul
           className={
-            page
-              ? 'it-submenu submenu it-mega-menu d-block'
-              : 'it-submenu submenu it-mega-menu'
+            page ? 'it-submenu submenu d-block' : 'it-submenu submenu'
           }
         >
-          <div className="it-mega-menu-wrap">
-            <div className="row">
-              <div className="col-xl-3">
-                <ul className="it-megamenu-space-1">
-                  {/* <li>
-                    <Link to="/event">Event</Link>
-                  </li>
-                  <li>
-                    <Link to="/event-details">Event Details</Link>
-                  </li> */}
-                  <li>
-                    <Link to="/our-founder">Our Founder</Link>
-                  </li>
-                  <li>
-                    <Link to="/chairmans-message">Chairman&apos;s Message</Link>
-                  </li>
-                  <li>
-                    <Link to="/managing-directors-message">
-                      Managing Director&apos;s Message
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/principals-message">
-                      Principal&apos;s Message
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/vice-principals-message">
-                      Vice Principal&apos;s Message
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/teacher">Instructor</Link>
-                  </li>
-                  <li>
-                    <Link to="/teacher-details">Instructor Details</Link>
-                  </li>
-                  <li>
-                    <Link to="/instructor-registration">
-                      Instructor Registration
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-xl-4">
-                <ul className="it-megamenu-space-2">
-                  <li>
-                    <Link to="/services-1">Service Style 01</Link>
-                  </li>
-                  <li>
-                    <Link to="/services-2">Service Style 02</Link>
-                  </li>
-                  <li>
-                    <Link to="/services-3">Service Style 03</Link>
-                  </li>
-                  <li>
-                    <Link to="/service-details">Service Details</Link>
-                  </li>
-                  <li>
-                    <Link to="/student-registration">Student Registration</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-xl-3">
-                <ul className="it-megamenu-space-3">
-                  <li>
-                    <Link to="/testimonial">Testimonial</Link>
-                  </li>
-                  <li>
-                    <Link to="/faq">Faq</Link>
-                  </li>
-                  <li>
-                    <Link to="/price">Price</Link>
-                  </li>
-                  <li>
-                    <Link to="/shop">Shop</Link>
-                  </li>
-                  <li>
-                    <Link to="/shop-details">Shop Details</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-xl-2">
-                <ul className="it-megamenu-space-4">
-                  <li>
-                    <Link to="/cart">Cart</Link>
-                  </li>
-                  <li>
-                    <Link to="/checkout">Checkout</Link>
-                  </li>
-                  <li>
-                    <Link to="/signup">Sign Up</Link>
-                  </li>
-                  <li>
-                    <Link to="/signin">Sign In</Link>
-                  </li>
-                  <li>
-                    <Link to="/404">Error</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+          <li>
+            <Link to="/our-founder">Our Founder</Link>
+          </li>
+          <li>
+            <Link to="/chairmans-message">Chairman&apos;s Message</Link>
+          </li>
+          <li>
+            <Link to="/managing-directors-message">
+              Managing Director&apos;s Message
+            </Link>
+          </li>
+          <li>
+            <Link to="/principals-message">Principal&apos;s Message</Link>
+          </li>
+          <li>
+            <Link to="/vice-principals-message">
+              Vice Principal&apos;s Message
+            </Link>
+          </li>
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
+          <li>
+            <Link to="/fee-structure">Fee Structure</Link>
+          </li>
+          <li>
+            <Link to="/book-list">Book List</Link>
+          </li>
+        </ul>
       </li>
       <li className="has-dropdown">
         <Link
@@ -265,6 +299,7 @@ const MenuItems = (props) => {
         >
           <span>Blog</span>
           <button
+            type="button"
             className={`${
               blog
                 ? 'dropdown-toggle-btn dropdown-opened'
@@ -281,13 +316,7 @@ const MenuItems = (props) => {
           className={blog ? 'it-submenu submenu d-block' : 'it-submenu submenu'}
         >
           <li>
-            <Link to="/blog-1">Blog Style 01</Link>
-          </li>
-          <li>
-            <Link to="/blog-2">Blog Style 02</Link>
-          </li>
-          <li>
-            <Link to="/blog-sidebar">Blog Sidebar</Link>
+            <Link to="/blog-1">Blog Catalog</Link>
           </li>
           <li>
             <Link to="/blog-details">Blog Details</Link>
