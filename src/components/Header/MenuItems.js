@@ -4,20 +4,29 @@ import { Link } from 'react-router-dom';
 const MenuItems = (props) => {
   const { mobileMenu } = props;
   const [course, setCourse] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [page, setPage] = useState(false);
   const [blog, setBlog] = useState(false);
 
   const openMobileMenu = (menu) => {
     if (menu === 'course') {
       setCourse(!course);
+      setAboutOpen(false);
+      setPage(false);
+      setBlog(false);
+    } else if (menu === 'about') {
+      setCourse(false);
+      setAboutOpen(!aboutOpen);
       setPage(false);
       setBlog(false);
     } else if (menu === 'page') {
       setCourse(false);
+      setAboutOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
       setCourse(false);
+      setAboutOpen(false);
       setPage(false);
       setBlog(!blog);
     }
@@ -36,12 +45,55 @@ const MenuItems = (props) => {
           <span>Home</span>
         </Link>
       </li>
-      <li>
-        <Link to="/about-us">
-          <span>About us</span>
-        </Link>
-      </li>
       <li className="has-dropdown">
+        <Link
+          to="#"
+          className={aboutOpen ? 'expanded' : ''}
+          onClick={handleClick}
+        >
+          <span>About</span>
+          <button
+            className={`${
+              aboutOpen
+                ? 'dropdown-toggle-btn dropdown-opened'
+                : 'dropdown-toggle-btn'
+            } d-xl-none`}
+            type="button"
+            onClick={() => {
+              openMobileMenu('about');
+            }}
+          >
+            <i className="fal fa-angle-right"></i>
+          </button>
+        </Link>
+        <ul
+          className={
+            aboutOpen ? 'it-submenu submenu d-block' : 'it-submenu submenu'
+          }
+        >
+          <li>
+            <Link to="/about-us">About Us</Link>
+          </li>
+          <li>
+            <Link to="/about-society">Society</Link>
+          </li>
+          <li>
+            <Link to="/about-aims-objectives">Aims &amp; Objectives</Link>
+          </li>
+          <li>
+            <Link to="/about-school-curriculum">School Curriculum</Link>
+          </li>
+          <li>
+            <Link to="/about-facilities">Facilities</Link>
+          </li>
+          <li>
+            <Link to="/mandatory-public-disclosure">
+              Mandatory Public Disclosure
+            </Link>
+          </li>
+        </ul>
+      </li>
+      {/* <li className="has-dropdown">
         <Link
           to="/course-details"
           className={course ? 'expanded' : ''}
@@ -76,7 +128,7 @@ const MenuItems = (props) => {
             <Link to="/course-details">Course Details</Link>
           </li>
         </ul>
-      </li>
+      </li> */}
       <li className="has-dropdown p-static">
         <Link to="#" className={page ? 'expanded' : ''} onClick={handleClick}>
           <span>Pages</span>
@@ -104,11 +156,32 @@ const MenuItems = (props) => {
             <div className="row">
               <div className="col-xl-3">
                 <ul className="it-megamenu-space-1">
-                  <li>
+                  {/* <li>
                     <Link to="/event">Event</Link>
                   </li>
                   <li>
                     <Link to="/event-details">Event Details</Link>
+                  </li> */}
+                  <li>
+                    <Link to="/our-founder">Our Founder</Link>
+                  </li>
+                  <li>
+                    <Link to="/chairmans-message">Chairman&apos;s Message</Link>
+                  </li>
+                  <li>
+                    <Link to="/managing-directors-message">
+                      Managing Director&apos;s Message
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/principals-message">
+                      Principal&apos;s Message
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/vice-principals-message">
+                      Vice Principal&apos;s Message
+                    </Link>
                   </li>
                   <li>
                     <Link to="/teacher">Instructor</Link>

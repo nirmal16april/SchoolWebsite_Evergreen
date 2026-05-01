@@ -9,6 +9,16 @@ import HomeFourOnePage from './home-4/home-4-one-page';
 import HomeFive from './home-5';
 import HomeFiveOnePage from './home-5/home-5-one-page';
 import About from './about';
+import AboutSociety from './about-society';
+import AboutAimsObjectives from './about-aims-objectives';
+import AboutSchoolCurriculum from './about-school-curriculum';
+import AboutFacilities from './about-facilities';
+import MandatoryPublicDisclosure from './mandatory-disclosure';
+import Founder from './founder';
+import Chairman from './Chairman/Chairman';
+import ManagingDirectorMessage from './managing-director';
+import PrincipalMessage from './principal-message';
+import VicePrincipalMessage from './vice-principal-message';
 import CourseOne from './course';
 import CourseTwo from './course/course-2';
 import CourseDetails from './course/course-details';
@@ -50,6 +60,16 @@ export {
   HomeFive,
   HomeFiveOnePage,
   About,
+  AboutSociety,
+  AboutAimsObjectives,
+  AboutSchoolCurriculum,
+  AboutFacilities,
+  MandatoryPublicDisclosure,
+  Founder,
+  Chairman,
+  ManagingDirectorMessage,
+  PrincipalMessage,
+  VicePrincipalMessage,
   CourseOne,
   CourseTwo,
   CourseDetails,

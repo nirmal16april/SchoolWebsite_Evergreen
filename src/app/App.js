@@ -9,11 +9,16 @@ import LoadTop from '../components/ScrollToTop/LoadTop';
 
 import {
   About,
+  AboutAimsObjectives,
+  AboutFacilities,
+  AboutSchoolCurriculum,
+  AboutSociety,
   Blog,
   BlogDetails,
   BlogSidebar,
   BlogTwo,
   Cart,
+  Chairman,
   Checkout,
   Contact,
   CourseDetails,
@@ -23,6 +28,7 @@ import {
   Event,
   EventDetails,
   Faq,
+  Founder,
   Home,
   HomeFive,
   HomeFiveOnePage,
@@ -34,7 +40,10 @@ import {
   HomeTwo,
   HomeTwoOnePage,
   InstructorRegistration,
+  MandatoryPublicDisclosure,
+  ManagingDirectorMessage,
   Price,
+  PrincipalMessage,
   Service,
   ServiceDetails,
   ServiceThree,
@@ -47,6 +56,7 @@ import {
   Teacher,
   TeacherDetails,
   Testimonial,
+  VicePrincipalMessage,
 } from '../pages';
 
 function App() {
@@ -82,6 +92,28 @@ function App() {
         <Route path="/home-5" element={<HomeFive />} />
         <Route path="/home-5-one-page" element={<HomeFiveOnePage />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/about-society" element={<AboutSociety />} />
+        <Route path="/about-aims-objectives" element={<AboutAimsObjectives />} />
+        <Route
+          path="/about-school-curriculum"
+          element={<AboutSchoolCurriculum />}
+        />
+        <Route path="/about-facilities" element={<AboutFacilities />} />
+        <Route
+          path="/mandatory-public-disclosure"
+          element={<MandatoryPublicDisclosure />}
+        />
+        <Route path="/our-founder" element={<Founder />} />
+        <Route path="/chairmans-message" element={<Chairman />} />
+        <Route
+          path="/managing-directors-message"
+          element={<ManagingDirectorMessage />}
+        />
+        <Route path="/principals-message" element={<PrincipalMessage />} />
+        <Route
+          path="/vice-principals-message"
+          element={<VicePrincipalMessage />}
+        />
         <Route path="/course-1" element={<CourseOne />} />
         <Route path="/course-2" element={<CourseTwo />} />
         <Route path="/course-details" element={<CourseDetails />} />

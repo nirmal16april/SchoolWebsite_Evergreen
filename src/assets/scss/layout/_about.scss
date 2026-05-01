@@ -938,3 +938,111 @@
         }
     }
 }
+
+.about-extended-copy {
+    & p {
+        color: #4d5756;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 22px;
+    }
+}
+
+.about-extended-list {
+    margin: 0 0 10px 0;
+    padding-left: 22px;
+    color: #4d5756;
+    font-size: 17px;
+    line-height: 32px;
+    & li {
+        margin-bottom: 14px;
+        padding-left: 6px;
+    }
+}
+
+.about-facility-thumb img {
+    border-radius: 8px;
+}
+
+.about-facility-block.border-bottom {
+    border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.disclosure-section {
+    margin-bottom: 3rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.grey-mini {
+        background: #f3f4f6;
+        margin-left: -12px;
+        margin-right: -12px;
+        padding: 2rem 12px;
+        border-radius: 8px;
+        @media #{$md,$xs} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.disclosure-block-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--it-common-black);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--it-theme-2);
+}
+
+.disclosure-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background: #fff;
+    th,
+    td {
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        padding: 14px 16px;
+        vertical-align: top;
+        color: #4d5756;
+        line-height: 1.55;
+    }
+    th {
+        background: #fafafa;
+        font-weight: 700;
+        color: var(--it-common-black);
+    }
+    tbody tr:nth-child(even) {
+        background: rgba(0, 0, 0, 0.02);
+    }
+}
+
+.disclosure-pdf-link {
+    color: var(--it-theme-2);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    &:hover {
+        text-decoration: underline;
+    }
+    & i {
+        font-size: 1.1em;
+    }
+}
+
+.disclosure-code {
+    font-size: 0.9em;
+    padding: 2px 6px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.disclosure-note {
+    font-size: 14px;
+    color: #6b7280;
+    font-style: italic;
+}
