@@ -4,6 +4,7 @@ import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 import ModalVideo from 'react-modal-video';
 import { useVideoContext } from '../../context/VideoContext';
 import SingleBanner from './SingleBanner';
+import sliderImg3 from '../../assets/new-images/Home-page/banners/banner-1.jpg';
 
 const sliderImg1 = '/custom/home-5/1.svg';
 const sliderImg2 = '/custom/home-5/2.svg';
@@ -60,6 +61,9 @@ const BannerSlider = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <SingleBanner sliderImage={sliderImg2} />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <SingleBanner sliderImage={sliderImg3} />
         </SwiperSlide>
       </Swiper>
     </div>

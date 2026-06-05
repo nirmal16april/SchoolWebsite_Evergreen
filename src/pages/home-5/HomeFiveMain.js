@@ -1,7 +1,5 @@
 import React from 'react';
 import About from './AboutSection';
-import Blog from './BlogSection';
-import Course from './CourseSection';
 import CTA from './CTASection';
 import FAQ from './FaqSection';
 import Feature from './FeatureSection';

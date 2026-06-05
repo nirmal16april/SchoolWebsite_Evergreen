@@ -15,17 +15,18 @@ import shapeImg4 from '../../assets/img/contact/shape-1-4.png';
 import titleImg from '../../assets/img/category/title.svg';
 import contactBG from '../../assets/img/contact/bg-5.jpg';
 
+const COUNTDOWN_TARGET_DATE = new Date('2024-12-01T00:00:00');
+
 const Contact = () => {
   const formRef = useRef();
-  const targetDate = new Date('2024-12-01T00:00:00');
 
   const calculateTimeLeft = () => {
     const now = new Date();
     const timeLeft = {
-      days: differenceInDays(targetDate, now),
-      hours: differenceInHours(targetDate, now) % 24,
-      minutes: differenceInMinutes(targetDate, now) % 60,
-      seconds: differenceInSeconds(targetDate, now) % 60,
+      days: differenceInDays(COUNTDOWN_TARGET_DATE, now),
+      hours: differenceInHours(COUNTDOWN_TARGET_DATE, now) % 24,
+      minutes: differenceInMinutes(COUNTDOWN_TARGET_DATE, now) % 60,
+      seconds: differenceInSeconds(COUNTDOWN_TARGET_DATE, now) % 60,
     };
 
     return timeLeft;
@@ -34,7 +35,13 @@ const Contact = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      const now = new Date();
+      setTimeLeft({
+        days: differenceInDays(COUNTDOWN_TARGET_DATE, now),
+        hours: differenceInHours(COUNTDOWN_TARGET_DATE, now) % 24,
+        minutes: differenceInMinutes(COUNTDOWN_TARGET_DATE, now) % 60,
+        seconds: differenceInSeconds(COUNTDOWN_TARGET_DATE, now) % 60,
+      });
     }, 1000);
 
     return () => clearTimeout(timer);

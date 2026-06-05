@@ -6,7 +6,7 @@ import RightArrow from '../../components/SVG';
 import shapeImg1 from '../../assets/img/about/ed-shape-2.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-1.png';
 import aboutImg1 from '../../assets/img/custom/home-5/3.svg';
-import aboutImg2 from '../../assets/img/about/ed-5-2.jpg';
+import aboutImg2 from '../../assets/new-images/Home-page/img-1.jpg';
 
 const About = () => {
   return (

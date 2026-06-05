@@ -14,7 +14,7 @@ import svgImg2 from '../../assets/img/header/5.svg';
 import Logo from '../../assets/img/logo/logo.svg';
 
 const HeaderTwo = (props) => {
-  const { headerClass, headerLogo, onePage, parentMenu } = props;
+  const { headerClass, onePage, parentMenu } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
@@ -137,7 +137,7 @@ const HeaderTwo = (props) => {
                       <i>
                         <img src={svgImg1} alt="" />
                       </i>
-                      <a href="#">Working : Monday -Friday.9:am - 5:Pm </a>
+                      <a href="#!">Working : Monday -Friday.9:am - 5:Pm </a>
                     </li>
                     <li className="d-none d-xl-inline-block">
                       <i>
@@ -145,7 +145,7 @@ const HeaderTwo = (props) => {
                       </i>
                       <a
                         target="_blank"
-                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttu"
+                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttu" rel="noreferrer"
                       >
                         Hudson, Wisconsin(WI), 54016
                       </a>
@@ -162,7 +162,7 @@ const HeaderTwo = (props) => {
                     </Link>
                   </div>
                   <div className="ed-header-top-social">
-                    <a href="#">
+                    <a href="#!">
                       <svg
                         width="8"
                         height="15"
@@ -176,13 +176,13 @@ const HeaderTwo = (props) => {
                         />
                       </svg>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fa-brands fa-skype"></i>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
                   </div>

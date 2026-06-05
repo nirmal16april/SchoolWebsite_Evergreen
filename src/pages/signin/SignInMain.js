@@ -31,7 +31,7 @@ const SignInMain = () => {
                       </div>
                     </div>
                     <div className="it-signup-forget d-flex justify-content-between flex-wrap">
-                      <a className="mb-20" href="#">
+                      <a className="mb-20" href="#!">
                         Forgot Password?
                       </a>
                       <div className="it-signup-agree mb-20">
@@ -60,7 +60,7 @@ const SignInMain = () => {
                       </button>
                       <div className="it-signup-link">
                         <span>or sign up with</span>
-                        <a href="#">
+                        <a href="#!">
                           <img src={iconImg} alt="" />
                         </a>
                       </div>

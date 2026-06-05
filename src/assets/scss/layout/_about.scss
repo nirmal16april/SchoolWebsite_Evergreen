@@ -903,6 +903,15 @@
             }
         }
     }
+    &-thumb-1 {
+        & img {
+            width: 312px;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
     &-thumb-2 {
         padding-top: 95px;
     }

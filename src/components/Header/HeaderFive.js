@@ -13,7 +13,7 @@ import phoneSVG from '../../assets/img/footer/1.svg';
 import mailSVG from '../../assets/img/footer/2.svg';
 
 const HeaderFive = (props) => {
-  const { headerClass, headerLogo, onePage, parentMenu } = props;
+  const { headerClass, onePage, parentMenu } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);

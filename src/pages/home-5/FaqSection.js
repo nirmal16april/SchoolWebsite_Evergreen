@@ -2,8 +2,8 @@ import React from 'react';
 import FaqOne from '../../components/Faq';
 import SectionTitle from '../../components/SectionTitle';
 
-import faqMainImg from '../../assets/img/faq/faq-2.jpg';
-import faqImg from '../../assets/img/faq/thumb-2.jpg';
+import faqMainImg from '../../assets/new-images/Home-page/img-4.jpg';
+import faqImg from '../../assets/new-images/Home-page/img-5.jpg';
 
 const FAQ = () => {
   const items = [
@@ -47,7 +47,7 @@ const FAQ = () => {
             data-wow-delay=".5s"
           >
             <div className="it-faq-thumb text-center text-lg-start">
-              <img src={faqMainImg} alt="" />
+              <img src={faqMainImg} alt="Students at Ever Green Senior Secondary School" />
             </div>
           </div>
           <div

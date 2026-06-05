@@ -76,6 +76,13 @@
         }
         display: inline-block;
         border: 10px solid var(--it-common-white);
+        & img {
+            width: 530px;
+            max-width: 100%;
+            height: 560px;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     &-shape {
         &-1 {

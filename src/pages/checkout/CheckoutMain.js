@@ -93,7 +93,7 @@ const CheckoutMain = () => {
                         </label>
                       </p>
                       <p className="lost-password">
-                        <a href="#">Lost your password?</a>
+                        <a href="#!">Lost your password?</a>
                       </p>
                     </form>
                   </div>

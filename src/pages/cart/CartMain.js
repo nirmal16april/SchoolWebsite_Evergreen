@@ -131,7 +131,7 @@ const CartMain = () => {
                             </span>
                           </td>
                           <td className="product-remove">
-                            <a href="#">
+                            <a href="#!">
                               <i className="fa fa-times"></i>
                             </a>
                           </td>

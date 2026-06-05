@@ -201,7 +201,7 @@ const Footer = (props) => {
                 }
               >
                 <p>
-                  Copyright &copy; 2026 <a href="#">Ever Green Senior Secondary School</a> || All Rights Reserved
+                  Copyright &copy; 2026 <a href="#!">Ever Green Senior Secondary School</a> || All Rights Reserved
                 </p>
               </div>
             </div>
