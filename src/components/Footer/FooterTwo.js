@@ -37,7 +37,7 @@ const FooterTwo = (props) => {
                     <span>Address:</span>
                     <a
                       target="_blank"
-                      href="https://www.google.com/maps/@25.1314121,87.0325089,8.83z?entry=ttu"
+                      href="https://www.google.com/maps/@25.1314121,87.0325089,8.83z?entry=ttu" rel="noreferrer"
                     >
                       1925 Boggess Street
                     </a>
@@ -129,31 +129,31 @@ const FooterTwo = (props) => {
                   <div className="it-footer-list">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="#!">
                           <i className="fa-regular fa-angle-right"></i>Web
                           development
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#!">
                           <i className="fa-regular fa-angle-right"></i>UI/UX
                           Design
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#!">
                           <i className="fa-regular fa-angle-right"></i>
                           Management
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#!">
                           <i className="fa-regular fa-angle-right"></i>Digital
                           Marketing
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#!">
                           <i className="fa-regular fa-angle-right"></i>Blog News
                         </a>
                       </li>
@@ -172,42 +172,42 @@ const FooterTwo = (props) => {
                     <div className="row gx-10">
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb mb-10">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg1} alt="" />
                           </a>
                         </div>
                       </div>
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb mb-10">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg2} alt="" />
                           </a>
                         </div>
                       </div>
                       <div className="col-md-4 col-4 mb-10">
                         <div className="it-footer-thumb">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg3} alt="" />
                           </a>
                         </div>
                       </div>
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg4} alt="" />
                           </a>
                         </div>
                       </div>
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg5} alt="" />
                           </a>
                         </div>
                       </div>
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb">
-                          <a href="#">
+                          <a href="#!">
                             <img src={footerImg6} alt="" />
                           </a>
                         </div>
@@ -258,7 +258,7 @@ const FooterTwo = (props) => {
                 }
               >
                 <p>
-                  Copyright &copy; 2024 <a href="#">edunity </a> || All Rights
+                  Copyright &copy; 2024 <a href="#!">edunity </a> || All Rights
                   Reserved
                 </p>
               </div>

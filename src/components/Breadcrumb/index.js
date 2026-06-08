@@ -44,7 +44,7 @@ const Breadcrumb = (props) => {
                   <span>
                     <Link to="/">home</Link>
                   </span>
-                  <span className="dvdr px-2">//</span>
+                  <span className="dvdr px-2">{'//'}</span>
                   <span>
                     {subTitle ? subTitle : title ? title : 'about us'}
                   </span>

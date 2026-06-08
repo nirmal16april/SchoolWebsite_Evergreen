@@ -15,7 +15,7 @@ import svgImg2 from '../../assets/img/header/2.svg';
 import svgImg3 from '../../assets/img/header/3.svg';
 
 const Header = (props) => {
-  const { headerClass, headerLogo, onePage, parentMenu } = props;
+  const { headerClass, onePage, parentMenu } = props;
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -67,7 +67,7 @@ const Header = (props) => {
                       <a
                         className="hover-anim"
                         target="_blank"
-                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttu"
+                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttu" rel="noreferrer"
                       >
                         238, Arimantab, Moska - USA.
                       </a>
@@ -78,7 +78,7 @@ const Header = (props) => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-8 d-none d-sm-block col-sm-8">
                 <div className="ed-header-top-social-box text-end">
                   <div className="ed-header-top-social">
-                    <a href="#">
+                    <a href="#!">
                       <svg
                         width="8"
                         height="15"
@@ -92,7 +92,7 @@ const Header = (props) => {
                         />
                       </svg>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <svg
                         width="14"
                         height="13"
@@ -126,7 +126,7 @@ const Header = (props) => {
                         </defs>
                       </svg>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <svg
                         width="14"
                         height="13"
@@ -148,7 +148,7 @@ const Header = (props) => {
                         />
                       </svg>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <svg
                         width="13"
                         height="10"

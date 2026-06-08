@@ -171,16 +171,16 @@ const ShopDetailsMain = () => {
                     </div>
                     <div className="it-shop-details__social">
                       <span>Share:</span>
-                      <a href="#">
+                      <a href="#!">
                         <i className="fab fa-facebook-f"></i>
                       </a>
-                      <a href="#">
+                      <a href="#!">
                         <i className="fab fa-instagram"></i>
                       </a>
-                      <a href="#">
+                      <a href="#!">
                         <i className="fab fa-twitter"></i>
                       </a>
-                      <a href="#">
+                      <a href="#!">
                         <i className="fab fa-pinterest-p"></i>
                       </a>
                     </div>

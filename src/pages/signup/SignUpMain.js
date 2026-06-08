@@ -45,7 +45,7 @@ const SignUpMain = () => {
                       </button>
                       <div className="it-signup-link">
                         <span>or sign up with</span>
-                        <a href="#">
+                        <a href="#!">
                           <img src={iconImg} alt="" />
                         </a>
                       </div>

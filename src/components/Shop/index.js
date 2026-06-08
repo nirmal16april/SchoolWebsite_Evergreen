@@ -24,7 +24,7 @@ const SingleShop = (props) => {
           <span>{badgeTitle ? badgeTitle : 'New'}</span>
         </div>
         <div className="it-shop-icon-box">
-          <a href="#">
+          <a href="#!">
             <svg
               width="14"
               height="12"
@@ -38,7 +38,7 @@ const SingleShop = (props) => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#!">
             <svg
               width="12"
               height="12"
@@ -52,7 +52,7 @@ const SingleShop = (props) => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#!">
             <svg
               width="14"
               height="14"

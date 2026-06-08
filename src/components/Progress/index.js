@@ -5,23 +5,27 @@ const SingleProgress = (props) => {
   const [width, setWidth] = useState(0);
   const progressRef = useRef();
 
-  const handleScroll = () => {
-    if (progressRef.current) {
-      const rect = progressRef.current.getBoundingClientRect();
-      const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-      if (isVisible) {
-        setWidth(progress);
-        window.removeEventListener('scroll', handleScroll);
-      }
-    }
-  };
-
   useEffect(() => {
-    setTimeout(() => {
+    const handleScroll = () => {
+      if (progressRef.current) {
+        const rect = progressRef.current.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        if (isVisible) {
+          setWidth(progress);
+          window.removeEventListener('scroll', handleScroll);
+        }
+      }
+    };
+
+    const timeoutId = setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
     }, 1500);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [progress]);
 
   const style = {
     width: `${width}%`,

@@ -33,7 +33,6 @@ import {
   FeeStructure,
   BookList,
   Founder,
-  Home,
   HomeFive,
   HomeFiveOnePage,
   HomeFour,

@@ -7,7 +7,7 @@ import shapeImg3 from '../../assets/img/choose/shape-1-9.png';
 import shapeImg4 from '../../assets/img/choose/shape-1-10.png';
 import shapeImg5 from '../../assets/img/choose/shape-1-5.png';
 import shapeImg6 from '../../assets/img/choose/shape-1-6.png';
-import chooseImg from '../../assets/img/choose/choose-2-2.jpg';
+import chooseImg from '../../assets/new-images/Home-page/img-3.jpg';
 
 const WhyChooseUs = () => {
   const items = [
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
           <div className="col-xl-6 col-lg-6 mb-30">
             <div className="it-choose-thumb-box text-center text-lg-end">
               <div className="it-choose-thumb p-relative">
-                <img src={chooseImg} alt="" />
+                <img src={chooseImg} alt="Students at Ever Green Senior Secondary School" />
                 <div className="it-choose-shape-1">
                   <img src={shapeImg5} alt="" />
                 </div>

@@ -23,6 +23,12 @@
         @media #{$xl}{
             left: -11%;
         }
+        & img {
+            height: 200px;
+            width: 560px;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     &-title {
         font-size: 35px;

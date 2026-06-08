@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitleTwo from '../../components/SectionTitle/SectionTitleTwo';
 
 import shapeImg1 from '../../assets/img/about/shape-5-4.png';
 import shapeImg2 from '../../assets/img/about/shape-4-4.png';

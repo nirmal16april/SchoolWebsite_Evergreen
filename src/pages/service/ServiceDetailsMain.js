@@ -203,14 +203,14 @@ const ServiceDetailsMain = () => {
                   </h4>
                   <div className="sidebar__widget-content">
                     <div className="tagcloud">
-                      <a href="#"> Balance</a>
-                      <a href="#">coaching</a>
-                      <a href="#">Motivation</a>
-                      <a href="#">courses</a>
-                      <a href="#">Life guide</a>
-                      <a href="#">strategy</a>
-                      <a href="#">Education</a>
-                      <a href="#">coach</a>
+                      <a href="#!"> Balance</a>
+                      <a href="#!">coaching</a>
+                      <a href="#!">Motivation</a>
+                      <a href="#!">courses</a>
+                      <a href="#!">Life guide</a>
+                      <a href="#!">strategy</a>
+                      <a href="#!">Education</a>
+                      <a href="#!">coach</a>
                     </div>
                   </div>
                 </div>

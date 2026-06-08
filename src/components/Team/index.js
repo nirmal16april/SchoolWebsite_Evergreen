@@ -18,16 +18,16 @@ const SingleTeam = (props) => {
             <i className="fa-sharp fa-light fa-share-nodes"></i>
           </button>
           <div className="it-team-social">
-            <a href="#">
+            <a href="#!">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i className="fa-brands fa-pinterest-p"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="#">
+            <a href="#!">
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>

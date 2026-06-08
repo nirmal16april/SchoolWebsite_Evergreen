@@ -37,7 +37,7 @@ const SingleBlogFour = (props) => {
               : 'Curabitur at fermentum purus. Interdum et malesuada fames ac ante ipsum'}
           </Link>
         </h4>
-        <a className={btnClass ? btnClass : 'ed-btn-theme'} href="#">
+        <a className={btnClass ? btnClass : 'ed-btn-theme'} href="#!">
           {btnText ? btnText : 'read more'}
           <i>
             <RightArrow />

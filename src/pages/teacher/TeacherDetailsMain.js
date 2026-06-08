@@ -62,16 +62,16 @@ const TeacherDetailsMain = () => {
                     <img src={teamMainImg} alt="" />
                   </div>
                   <div className="it-teacher-details-left-social text-center">
-                    <a href="#">
+                    <a href="#!">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fab fa-skype"></i>
                     </a>
-                    <a href="#">
+                    <a href="#!">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
                   </div>
@@ -83,7 +83,7 @@ const TeacherDetailsMain = () => {
                       </li>
                       <li>
                         <i className="fa-light fa-location-dot"></i>
-                        <a href="https://www.google.com/maps" target="_blank">
+                        <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
                           Hudson, Wisconsin(WI), 54016
                         </a>
                       </li>

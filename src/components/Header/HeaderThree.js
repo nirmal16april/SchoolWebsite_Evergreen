@@ -10,7 +10,7 @@ import Logo from '../../assets/img/logo/logo.svg';
 import OffCanvasInsta from '../OffCanvas';
 
 const HeaderThree = (props) => {
-  const { headerClass, headerLogo, onePage, parentMenu } = props;
+  const { headerClass, onePage, parentMenu } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
 

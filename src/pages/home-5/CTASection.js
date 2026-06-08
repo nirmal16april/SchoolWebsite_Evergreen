@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RightArrow from '../../components/SVG';
 
-import ctaImg from '../../assets/img/about/cta-1.png';
+import ctaImg from '../../assets/new-images/Home-page/img-2.jpg';
 
 const CTA = () => {
   return (
     <div className="it-cta-area it-cta-height black-bg p-relative">
       <div className="it-cta-bg d-none d-xl-block">
-        <img src={ctaImg} alt="" />
+        <img src={ctaImg} alt="Students at Ever Green Senior Secondary School" />
       </div>
       <div className="container">
         <div className="row align-items-center">

@@ -108,6 +108,14 @@
         margin-right: 0;
       }
     }
+    & img {
+      width: 206px;
+      height: 108px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
   }
 }
 .it-custom-accordion-style-3 {

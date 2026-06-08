@@ -11,7 +11,7 @@ import OffCanvasInsta from '../OffCanvas';
 import Logo from '../../assets/img/logo/logo.svg';
 
 const HeaderFour = (props) => {
-  const { headerClass, headerLogo, onePage, parentMenu } = props;
+  const { headerClass, onePage, parentMenu } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
@@ -128,7 +128,7 @@ const HeaderFour = (props) => {
                 <div className="ed-header-top-left">
                   <ul className="text-center text-sm-start">
                     <li className="d-none d-xl-inline-block">
-                      <a className="hover-anim" href="#">
+                      <a className="hover-anim" href="#!">
                         <span>
                           <i className="fal fa-clock"></i>
                         </span>
@@ -139,7 +139,7 @@ const HeaderFour = (props) => {
                       <a
                         className="hover-anim"
                         target="_blank"
-                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttup"
+                        href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttup" rel="noreferrer"
                       >
                         <span>
                           <i className="fal fa-map-marker-alt"></i>
@@ -166,10 +166,11 @@ const HeaderFour = (props) => {
                           <ul>
                             <li>
                               <a
-                                href="javascript:void(0)"
-                                onClick={() =>
-                                  setIsLanguageOpen(!isLanguageOpen)
-                                }
+                                href="#!"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  setIsLanguageOpen(!isLanguageOpen);
+                                }}
                               >
                                 <img
                                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAVNQTFRFAAAAqqqq2yQk3yAg3d3d3xAw////IDBoKDB4Jy58JDJtJDBsKDB4KDR4TEh4KjVxmXidd2eLhomzkpaxOkJ4h4y1j5WvV2CYml2Db3anNT+CS1OFh4qqaXCh20lR7GZ33nd93Vxj8IWT9Kix4nuG9aix73GB4YKM4Z+i7m5+lWiPzUBKzkBL3UtVil+KLDVxMTqAkJSw1x8o5B008HeE3nyB73SERkd6aViAd32rjnKakI2qxKe8yMrc5h435y5EjXme5iU96TpP6kJW7Fdp8YaT1x8o2TY+4F9o5R015zdM////JS9sKTN6Pkh9Pkh+QUqCQkqDUVmTX2abbXSaeX+shouqhoy1qq3I1x8o2kRM2x4r3Wpv4Zyf4x005R015tvb5ytC56Ck5+fn6Uda6urq7nKB73KB74uX8ICN8YyY8o6a8vL39aqz9quz/fHy////FdmZ/AAAAEx0Uk5TAAMHCA8QECAgJzhAQECKjIyNjY+QkJCSkpOZn5+gx8rMz8/P0NDZ3d/f8PT09Pb4+Pj4+Pn6+vv7+/v7+/v7+/z8/Pz8/P7+/v7+/v/y6qoAAADXSURBVBjTY2AAAh5Jtfg4FWl2BghgE/cNNouPz/LzEWQG8VmVc4JAAtmBFu4KLEABCcfcnHCQgIO7abIwAwOnr55jbgFQIN3LNDnMh5tBysBAyzEXKBDvmmqor8/PoJqXl2cS7xQf75yXFBsbq8EQjwDRkZGRRugCbgyaaSCQCOTbecTExCgyiIaG2hZkA/mZKbrWISEyDLy+lt7Z9i5Ad+RHaZv7AJ0vBOTbgBwWkRClwwfyipK9FdjpAWEJcmDPMQmAPZfh7yPGCPUvh6y8p7G6CBeIDQCHLz7jeLHZSAAAAABJRU5ErkJggg=="
@@ -194,13 +195,13 @@ const HeaderFour = (props) => {
                               </a>
                               <ul className="ed-header-4-lang-submenu">
                                 <li>
-                                  <a href="#">Arabic</a>
+                                  <a href="#!">Arabic</a>
                                 </li>
                                 <li>
-                                  <a href="#">Spanish</a>
+                                  <a href="#!">Spanish</a>
                                 </li>
                                 <li>
-                                  <a href="#">Mandarin</a>
+                                  <a href="#!">Mandarin</a>
                                 </li>
                               </ul>
                             </li>
@@ -209,16 +210,16 @@ const HeaderFour = (props) => {
                       </li>
                       <li>
                         <div className="ed-header-4-top-social">
-                          <a href="#">
+                          <a href="#!">
                             <i className="fab fa-facebook-f"></i>
                           </a>
-                          <a href="#">
+                          <a href="#!">
                             <i className="fab fa-twitter"></i>
                           </a>
-                          <a href="#">
+                          <a href="#!">
                             <i className="fab fa-skype"></i>
                           </a>
-                          <a href="#">
+                          <a href="#!">
                             <i className="fab fa-linkedin"></i>
                           </a>
                         </div>

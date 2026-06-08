@@ -24,13 +24,13 @@ const ChairmanMain = () => {
                   </div>
 
                   <div className="it-teacher-details-left-social text-center">
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#!" target="_blank" rel="noreferrer">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#!" target="_blank" rel="noreferrer">
                       <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noreferrer">
+                    <a href="#!" target="_blank" rel="noreferrer">
                       <i className="fab fa-youtube"></i>
                     </a>
                   </div>
