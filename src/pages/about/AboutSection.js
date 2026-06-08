@@ -7,7 +7,6 @@ import aboutImg2 from '../../assets/new-images/about-page/img_03.jpg';
 import aboutImg3 from '../../assets/new-images/about-page/img_02.jpg';
 import shapeImg1 from '../../assets/img/about/ed-shape-2-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-2-2.png';
-import titleImg from '../../assets/img/about/title-home2.png';
 
 const About = () => {
   return (
@@ -43,9 +42,6 @@ const About = () => {
             data-wow-delay=".7s"
           >
             <div className="it-about-3-title-box">
-              <span className="it-section-subtitle-3">
-                <img src={titleImg} alt=""></img> about us
-              </span>
               <h2 className="it-section-title-3 pb-30">
                 Welcome to <span>Ever Green Senior Secondary School</span>
               </h2>

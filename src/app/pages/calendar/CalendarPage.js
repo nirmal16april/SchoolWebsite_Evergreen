@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from 'react';
 
 import Breadcrumb from '../../../components/Breadcrumb';
-import SectionTitle from '../../../components/SectionTitle';
 import { useGetCalendarEventsQuery } from '../../../store/api/calendarApi';
 
 import CalendarView from './components/CalendarView';
@@ -15,8 +14,6 @@ import {
   CalendarLoading,
 } from './components/CalendarStatus';
 import { filterEventsByType } from './utils/eventHelpers';
-
-import titleImg from '../../../assets/img/about/title-home2.png';
 
 const CalendarPage = () => {
   const [activeView, setActiveView] = useState('calendar');
@@ -45,15 +42,7 @@ const CalendarPage = () => {
 
       <section className="it-calendar-area pt-90 pb-120">
         <div className="container">
-          <SectionTitle
-            itemClass="it-calendar-title-box text-center mb-50"
-            subTitleClass="it-section-subtitle-3 d-inline-flex align-items-center justify-content-center"
-            subTitle="Plan Ahead"
-            titleClass="it-section-title-3"
-            title="Academic Calendar & Important Dates"
-            titleImage={titleImg}
-            description="Stay informed about holidays, examinations, admissions, school activities, and other important dates throughout the academic year at Ever Green Senior Secondary School."
-          />
+
 
           {isLoading && (
             <CalendarLoading message="Loading academic calendar…" />

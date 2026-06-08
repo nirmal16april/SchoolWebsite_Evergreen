@@ -1,8 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import SingleCategory from '../../components/Category';
-import SectionTitle from '../../components/SectionTitle';
-
 import shapeImg from '../../assets/img/category/ed-shape-1.png';
 
 const ServiceMain = () => {
@@ -15,15 +13,6 @@ const ServiceMain = () => {
           <img src={shapeImg} alt="" />
         </div>
         <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <SectionTitle
-                itemClass="ed-category-title-box text-center mb-70"
-                subTitle="CATEGORIES"
-                title="Browse By Categories"
-              />
-            </div>
-          </div>
           <div className="row gx-35">
             <div
               className="col-xl-4 col-lg-6 col-md-6 col-sm-6 wow animate__fadeInUp"

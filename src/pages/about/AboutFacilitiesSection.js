@@ -4,8 +4,6 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import PrevArrow from '../../components/SVG/PrevArrow';
 import NextArrow from '../../components/SVG/NextArrow';
 
-import titleImg from '../../assets/img/about/title-home2.png';
-
 import img1 from '../../assets/img/course/course-2-1.jpg';
 import img2 from '../../assets/img/course/course-2-2.jpg';
 import img3 from '../../assets/img/course/course-2-3.jpg';
@@ -146,20 +144,6 @@ const AboutFacilitiesSection = () => {
   return (
     <section id="about-facilities" className="it-about-3-area fix pt-100 pb-100 grey-bg-4">
       <div className="container">
-        <div className="row justify-content-center mb-60">
-          <div className="col-xl-8 text-center">
-            <div className="it-about-3-title-box">
-              <span className="it-section-subtitle-3 d-inline-flex align-items-center justify-content-center">
-                <img src={titleImg} alt="" /> Facility
-              </span>
-              <h2 className="it-section-title-3 pt-15 pb-10">School Facility</h2>
-              <p className="mb-0">
-                Explore our infrastructure and learning environments across the campus.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="row justify-content-center">
           <div className="col-xl-10 col-lg-11">
             {FACILITIES.map((f, idx) => (

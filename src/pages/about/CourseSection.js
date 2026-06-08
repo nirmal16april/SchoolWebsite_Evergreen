@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/SectionTitle';
 import RightArrow from '../../components/SVG';
 import SingleCourse from '../../components/Course';
 
@@ -18,26 +17,15 @@ const Course = () => {
       className="it-course-area ed-course-bg ed-course-style-3 p-relative pt-120 pb-90"
     >
       <div className="container">
-        <div className="ed-course-title-wrap mb-65">
-          <div className="row align-items-center">
-            <div className="col-xl-6">
-              <SectionTitle
-                itemClass="it-course-title-box"
-                subTitleClass="ed-section-subtitle"
-                subTitle="Our Courses"
-                titleClass="ed-section-title"
-                title="Creating A Community Of Life Long Learners."
-              />
-            </div>
-            <div className="col-xl-6">
-              <div className="ed-course-button text-lg-end">
-                <Link className="ed-btn-square orange" to="/course-details">
-                  Explore courses
-                  <i>
-                    <RightArrow />
-                  </i>
-                </Link>
-              </div>
+        <div className="row mb-30">
+          <div className="col-12">
+            <div className="ed-course-button text-lg-end">
+              <Link className="ed-btn-square orange" to="/course-details">
+                Explore courses
+                <i>
+                  <RightArrow />
+                </i>
+              </Link>
             </div>
           </div>
         </div>

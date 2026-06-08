@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../components/Breadcrumb';
-import SectionTitle from '../../../components/SectionTitle';
 import { useGetAlbumsQuery } from '../../../store/api/galleryApi';
 
 import AlbumCard from './components/AlbumCard';
@@ -9,8 +8,6 @@ import {
   GalleryError,
   GalleryLoading,
 } from './components/GalleryStatus';
-
-import titleImg from '../../../assets/img/about/title-home2.png';
 
 const GalleryPage = () => {
   const { data: albums, isLoading, isError, refetch } = useGetAlbumsQuery();
@@ -21,16 +18,6 @@ const GalleryPage = () => {
 
       <section className="it-gallery-area pt-90 pb-120">
         <div className="container">
-          <SectionTitle
-            itemClass="it-gallery-title-box text-center mb-50"
-            subTitleClass="it-section-subtitle-3 d-inline-flex align-items-center justify-content-center"
-            subTitle="Our Memories"
-            titleClass="it-section-title-3"
-            title="School Events & Activities"
-            titleImage={titleImg}
-            description="Browse photo albums from annual functions, sports days, celebrations, and other memorable moments at Ever Green Senior Secondary School."
-          />
-
           {isLoading && <GalleryLoading message="Loading photo albums…" />}
 
           {isError && (

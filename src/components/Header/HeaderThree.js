@@ -7,8 +7,6 @@ import {
   EvergreenOffcanvasIntro,
 } from './EvergreenOffcanvasSchoolInfo';
 import Logo from '../../assets/img/logo/logo.svg';
-import OffCanvasInsta from '../OffCanvas';
-
 const HeaderThree = (props) => {
   const { headerClass, onePage, parentMenu } = props;
   const [isVisible, setIsVisible] = useState(false);
@@ -175,7 +173,6 @@ const HeaderThree = (props) => {
             )}
           </div>
           <EvergreenOffcanvasGetInTouch />
-          <OffCanvasInsta />
         </div>
       </div>
 

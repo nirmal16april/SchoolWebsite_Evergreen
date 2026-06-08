@@ -6,8 +6,6 @@ import {
   EvergreenOffcanvasGetInTouch,
   EvergreenOffcanvasIntro,
 } from './EvergreenOffcanvasSchoolInfo';
-import OffCanvasInsta from '../OffCanvas';
-
 import Logo from '../../assets/img/logo/logo.svg';
 
 const HeaderFour = (props) => {
@@ -353,7 +351,6 @@ const HeaderFour = (props) => {
             )}
           </div>
           <EvergreenOffcanvasGetInTouch />
-          <OffCanvasInsta />
         </div>
       </div>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import SectionTitle from '../../components/SectionTitle';
 import SingleTestimonial from '../../components/Testimonial';
 
 import testimonialBG from '../../assets/img/testimonial/testimonial-bg.jpg';
@@ -36,17 +35,6 @@ const Testimonial = () => {
       style={{ backgroundImage: `url(${testimonialBG})` }}
     >
       <div className="container">
-        <div className="it-testimonial-title-wrap mb-90">
-          <div className="row justify-content-center">
-            <div className="col-xl-6">
-              <SectionTitle
-                itemClass="it-testimonial-title-box text-center"
-                subTitle="testimonial"
-                title="Happy Parents"
-              />
-            </div>
-          </div>
-        </div>
         <div className="row">
           <div className="col-xl-12">
             <div className="ed-testimonial-wrapper">
