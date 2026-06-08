@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumb';
 import RightArrow from '../../components/SVG';
 
-import messageImg from '../../assets/img/team/team-inner.jpg';
+import messageImg from '../../assets/new-images/about-page/vice-principal-evergreen.jpeg';
 
 const VicePrincipalMessageMain = () => {
   return (

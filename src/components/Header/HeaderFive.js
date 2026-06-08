@@ -6,8 +6,6 @@ import {
   EvergreenOffcanvasGetInTouch,
   EvergreenOffcanvasIntro,
 } from './EvergreenOffcanvasSchoolInfo';
-import OffCanvasInsta from '../OffCanvas';
-
 import Logo from '../../assets/img/logo/logo.svg';
 import phoneSVG from '../../assets/img/footer/1.svg';
 import mailSVG from '../../assets/img/footer/2.svg';
@@ -306,7 +304,6 @@ const HeaderFive = (props) => {
             )}
           </div>
           <EvergreenOffcanvasGetInTouch />
-          <OffCanvasInsta />
         </div>
       </div>
 

@@ -12,8 +12,7 @@ const SmcMain = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-11">
-              <div className="it-about-3-title-box text-center mb-40">
-                <h2 className="it-section-title-3 pb-15">SMC</h2>
+              <div className="text-center mb-40">
                 <p className="about-extended-copy mb-30">
                   Use <strong>View</strong> for browser PDF preview (web view),
                   <strong> Download PDF</strong> to save, or use the embedded

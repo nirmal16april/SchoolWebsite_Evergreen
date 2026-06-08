@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
-import SectionTitleTwo from '../../components/SectionTitle/SectionTitleTwo';
 import SingleTeamThree from '../../components/Team/SingleTeamThree';
 import PrevArrow from '../../components/SVG/PrevArrow';
 import NextArrow from '../../components/SVG/NextArrow';
@@ -49,17 +48,7 @@ const Team = () => {
       <div className="container">
         <div className="it-team-title-wrap mb-40">
           <div className="row align-items-center">
-            <div className="col-xl-6">
-              <SectionTitleTwo
-                itemClass="it-team-title-box"
-                subtitleClass="it-section-subtitle-5 orange"
-                icon="fa-light fa-book"
-                subtitle="Teacher"
-                titleClass="ed-section-title"
-                title="Meet Our Instructor"
-              />
-            </div>
-            <div className="col-xl-6">
+            <div className="col-12">
               <div className="ed-team-arrow-box text-end">
                 <button className="slider-prev">
                   <PrevArrow />

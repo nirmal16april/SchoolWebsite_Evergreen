@@ -5,7 +5,6 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import Breadcrumb from '../../components/Breadcrumb';
 import RightArrow from '../../components/SVG';
 import SingleProgress from '../../components/Progress';
-import SectionTitle from '../../components/SectionTitle';
 import SingleTeamThree from '../../components/Team/SingleTeamThree';
 import NextArrow from '../../components/SVG/NextArrow';
 import PrevArrow from '../../components/SVG/PrevArrow';
@@ -161,19 +160,6 @@ const TeacherDetailsMain = () => {
 
       <div className="ed-team-area grey-bg-5 p-relative inner-style fix z-index pt-110 pb-120">
         <div className="container">
-          <div className="it-team-title-wrap mb-40">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-xl-6">
-                <SectionTitle
-                  itemClass="it-team-title-box text-center"
-                  subTitleClass="ed-section-subtitle"
-                  subTitle="Teacher"
-                  titleClass="ed-section-title"
-                  title="Meet Our Instructor"
-                />
-              </div>
-            </div>
-          </div>
           <div className="ed-team-wrapper">
             <div className="swiper-container ed-team-active">
               <Swiper
