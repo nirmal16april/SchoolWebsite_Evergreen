@@ -292,6 +292,9 @@ const MenuItems = (props) => {
           <li>
             <Link to="/gallery">Photo Gallery</Link>
           </li>
+          <li>
+            <Link to="/calendar">Academic Calendar</Link>
+          </li>
         </ul>
       </li>
       <li className="has-dropdown">

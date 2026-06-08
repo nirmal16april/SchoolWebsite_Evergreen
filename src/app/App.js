@@ -70,6 +70,7 @@ import {
   VicePrincipalMessage,
   Gallery,
   GalleryDetails,
+  Calendar,
 } from '../pages';
 
 function App() {
@@ -171,6 +172,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/gallery/:albumId" element={<GalleryDetails />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
