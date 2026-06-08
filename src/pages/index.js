@@ -59,6 +59,8 @@ import BlogTwo from './blog/blog-2';
 import BlogSidebar from './blog/blog-sidebar';
 import BlogDetails from './blog/blog-details';
 import Contact from './contact';
+import Gallery from '../app/pages/gallery';
+import GalleryDetails from '../app/pages/gallery/gallery-details';
 
 export {
   Home,
@@ -122,4 +124,6 @@ export {
   BlogSidebar,
   BlogDetails,
   Contact,
+  Gallery,
+  GalleryDetails,
 };

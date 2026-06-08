@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumb';
 import RightArrow from '../../components/SVG';
 
-import chairmanImg from '../../assets/img/team/team-inner.jpg';
+import chairmanImg from '../../assets/new-images/about-page/2.svg';
 
 const ChairmanMain = () => {
   return (

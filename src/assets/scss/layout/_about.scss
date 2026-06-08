@@ -701,21 +701,37 @@
     &-thumb{
         &-one {
             flex: 0 0 auto;
+            max-width: 230px;
             @media #{$xs}{
                 padding-bottom: 20px;
                 margin-right: 0;
                 width: 100%;
+                max-width: 100%;
             }
             & img {
                 flex: 0 0 auto;
                 width: 100%;
+                height: 500px;
+                object-fit: cover;
+                object-position: center top;
+                border-radius: 5px;
+                @media #{$xs}{
+                    height: auto;
+                    max-height: 500px;
+                }
             }
         }
         &-two {
+            max-width: 315px;
             & img {
                 width: 100%;
+                object-fit: cover;
+                border-radius: 5px;
                 &.inner-top-img{
-                    width: inherit;
+                    width: 240px;
+                    max-width: 100%;
+                    height: 240px;
+                    object-fit: cover;
                 }
             }
         }

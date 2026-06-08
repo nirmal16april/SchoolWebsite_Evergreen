@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RightArrow from '../../components/SVG';
 
-import aboutImg1 from '../../assets/img/about/ed-about-2-1.png';
-import aboutImg2 from '../../assets/img/about/ed-about-2-3.png';
-import aboutImg3 from '../../assets/img/about/ed-about-2-2.png';
+import aboutImg1 from '../../assets/new-images/about-page/img_01.jpg';
+import aboutImg2 from '../../assets/new-images/about-page/img_03.jpg';
+import aboutImg3 from '../../assets/new-images/about-page/img_02.jpg';
 import shapeImg1 from '../../assets/img/about/ed-shape-2-1.png';
 import shapeImg2 from '../../assets/img/about/ed-shape-2-2.png';
 import titleImg from '../../assets/img/about/title-home2.png';
@@ -22,7 +22,7 @@ const About = () => {
             <div className="ed-about-2-left p-relative text-end">
               <div className="ed-about-2-left-box d-inline-flex align-items-end">
                 <div className="ed-about-2-thumb-one pb-110 mr-20">
-                  <img src={aboutImg1} alt="" />
+                  <img src={aboutImg1} alt="Ever Green Senior Secondary School student" />
                 </div>
                 <div className="ed-about-2-thumb-two text-start">
                   <img className="mb-20 inner-top-img" src={aboutImg2} alt="" />

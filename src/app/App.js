@@ -68,6 +68,8 @@ import {
   ToppersClassX,
   ToppersClassXII,
   VicePrincipalMessage,
+  Gallery,
+  GalleryDetails,
 } from '../pages';
 
 function App() {
@@ -167,6 +169,8 @@ function App() {
         <Route path="/blog-sidebar" element={<BlogSidebar />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/:albumId" element={<GalleryDetails />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
