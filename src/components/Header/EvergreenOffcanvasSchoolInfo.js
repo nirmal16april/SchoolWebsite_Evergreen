@@ -34,13 +34,35 @@ export function EvergreenOffcanvasGetInTouch() {
       </div>
       <div className="it-info-wrapper mb-20 d-flex align-items-center">
         <div className="itoffcanvas__info-icon">
-          <a href="tel:+915946292491">
+          <a href="tel:+915946232762">
             <i className="fal fa-phone-alt" />
           </a>
         </div>
         <div className="itoffcanvas__info-address">
+          <span>Office</span>
+          <a href="tel:+915946232762">05946-232762</a>
+        </div>
+      </div>
+      <div className="it-info-wrapper mb-20 d-flex align-items-center">
+        <div className="itoffcanvas__info-icon">
+          <a href="tel:+918057420801">
+            <i className="fal fa-mobile-android" />
+          </a>
+        </div>
+        <div className="itoffcanvas__info-address">
           <span>Reception</span>
-          <a href="tel:+915946292491">(05946) 292491</a>
+          <a href="tel:+918057420801">+91 80574 20801</a>
+        </div>
+      </div>
+      <div className="it-info-wrapper mb-20 d-flex align-items-center">
+        <div className="itoffcanvas__info-icon">
+          <a href="tel:+918958851161">
+            <i className="fal fa-mobile-android" />
+          </a>
+        </div>
+        <div className="itoffcanvas__info-address">
+          <span>Principal</span>
+          <a href="tel:+918958851161">+91 89588 51161</a>
         </div>
       </div>
       <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -50,9 +72,8 @@ export function EvergreenOffcanvasGetInTouch() {
           </a>
         </div>
         <div className="itoffcanvas__info-address">
-          <span>Mobile</span>
+          <span>Managing Director</span>
           <a href="tel:+919997182574">+91 99971 82574</a>
-          <a href="tel:+918958851161">+91 89588 51161</a>
         </div>
       </div>
       <div className="it-info-wrapper mb-20 d-flex align-items-center">

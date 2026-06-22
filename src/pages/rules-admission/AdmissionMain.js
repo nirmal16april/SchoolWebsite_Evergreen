@@ -86,8 +86,9 @@ const AdmissionMain = () => {
         <div className="rules-lead">
           <p className="mb-0">
             Join the Ever Green School family and give your child the foundation
-            to achieve their dreams. For queries, call{' '}
-            <a href="tel:05946367624">05946-367624</a> or{' '}
+            to achieve their dreams.             For queries, call the office at{' '}
+            <a href="tel:05946232762">05946-232762</a>, reception at{' '}
+            <a href="tel:+918057420801">+91 80574 20801</a>, or{' '}
             <Link to="/contact">contact us online</Link>.
           </p>
         </div>

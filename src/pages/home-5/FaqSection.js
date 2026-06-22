@@ -32,7 +32,7 @@ const FAQ = () => {
       id: 'd',
       btnText: 'How can parents connect with the school?',
       description:
-        'You can call reception at 05946-292491 or email us at evergreenpublicschool42@yahoo.in for admissions and school information.',
+        'You can call the office at 05946-232762, reception at +91 80574 20801, or email us at evergreenpublicschool42@yahoo.in for admissions and school information.',
       faqImage: faqImg,
     },
   ];

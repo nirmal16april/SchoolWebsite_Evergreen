@@ -5,11 +5,13 @@
     height: 365px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     object-fit: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     @media #{$xl} {
         height: 320px;
@@ -17,6 +19,113 @@
 
     @media #{$xs} {
         height: 300px;
+    }
+
+    &.evergreen-breadcrumb-banner {
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.45) 0%,
+                rgba(14, 42, 70, 0.42) 50%,
+                rgba(14, 42, 70, 0.48) 100%
+            );
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            background: radial-gradient(
+                ellipse at center,
+                rgba(14, 42, 70, 0.32) 28%,
+                rgba(14, 42, 70, 0.58) 72%,
+                rgba(8, 24, 40, 0.78) 100%
+            );
+            box-shadow: inset 0 0 120px rgba(8, 24, 40, 0.55);
+        }
+
+        & > .container {
+            position: relative;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        & > [class*='it-breadcrumb-shape'] {
+            position: relative;
+            z-index: 3;
+        }
+
+        & .it-breadcrumb-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        & .it-breadcrumb-title-box {
+            width: 100%;
+            text-align: center;
+            transform: translateX(-18%);
+
+            @media #{$lg} {
+                transform: translateX(-13%);
+            }
+
+            @media #{$md,$xs} {
+                transform: translateX(-8%);
+            }
+        }
+
+        & .it-breadcrumb-title {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            text-shadow:
+                0 2px 4px rgba(8, 24, 40, 0.85),
+                0 6px 24px rgba(8, 24, 40, 0.65);
+        }
+
+        & .it-breadcrumb-list span {
+            color: rgba(255, 255, 255, 0.92);
+
+            &.dvdr {
+                color: var(--it-common-yellow);
+            }
+        }
+    }
+
+    &.evergreen-breadcrumb-image-only {
+        height: 520px;
+
+        @media #{$xl} {
+            height: 460px;
+        }
+
+        @media #{$lg,$md} {
+            height: 400px;
+        }
+
+        @media #{$xs} {
+            height: 320px;
+        }
+
+        &::before,
+        &::after {
+            display: none;
+        }
     }
 }
 

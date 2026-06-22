@@ -291,6 +291,58 @@
     margin-left: 0;
   }
 }
+
+.evergreen-footer-contact-list {
+  & ul {
+    & li.evergreen-footer-contact-item {
+      padding-left: 14px;
+      border-left: 2px solid rgba(255, 255, 255, 0.25);
+      margin-bottom: 16px;
+
+      & a {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        text-transform: none;
+        line-height: 1.3;
+
+        &:hover {
+          color: var(--it-common-white);
+
+          & .evergreen-footer-contact-value {
+            color: var(--it-common-yellow);
+          }
+        }
+      }
+    }
+  }
+
+  & .evergreen-footer-contact-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  & .evergreen-footer-contact-value {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--it-common-white);
+    white-space: nowrap;
+
+    @media #{$xs} {
+      white-space: normal;
+      word-break: break-word;
+    }
+  }
+}
+
+.evergreen-footer-contact-links {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
 .footer-col-6 {
   margin-left: -30px;
   @media #{$lg,$md,$xs} {
@@ -343,6 +395,15 @@
             }
           }
         }
+      }
+    }
+  }
+  & .evergreen-footer-contact-list {
+    & ul li.evergreen-footer-contact-item a:hover {
+      color: var(--it-common-white);
+
+      & .evergreen-footer-contact-value {
+        color: var(--it-theme-2);
       }
     }
   }
