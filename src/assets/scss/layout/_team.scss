@@ -674,6 +674,19 @@
     }
 }
 
+.evergreen-society-profile {
+    & .it-teacher-details-left-thumb {
+        & img {
+            min-height: auto;
+            max-height: none;
+            object-fit: contain;
+            object-position: center;
+            padding: 48px 32px;
+            background: var(--it-common-white);
+        }
+    }
+}
+
 .evergreen-leadership-sidebar-right {
     & .it-teacher-details-right {
         margin-left: 0;

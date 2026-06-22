@@ -34,15 +34,13 @@ const Breadcrumb = (props) => {
             <img src={shapeImg4} alt="" />
           </div>
           <div className="container">
-            <div className="row ">
-              <div className="col-md-12">
-                <div className="it-breadcrumb-content z-index-3 text-center">
-                  <div className="it-breadcrumb-title-box">
-                    <h3 className="it-breadcrumb-title">
-                      {title ? title : 'about us'}
-                    </h3>
-                  </div>
-                  {/* <div className="it-breadcrumb-list-wrap">
+            <div className="it-breadcrumb-content z-index-3 text-center">
+              <div className="it-breadcrumb-title-box">
+                <h3 className="it-breadcrumb-title">
+                  {title ? title : 'about us'}
+                </h3>
+              </div>
+              {/* <div className="it-breadcrumb-list-wrap">
                 <div className="it-breadcrumb-list">
                   <span>
                     <Link to="/">home</Link>
@@ -53,8 +51,6 @@ const Breadcrumb = (props) => {
                   </span>
                 </div>
               </div> */}
-                </div>
-              </div>
             </div>
           </div>
         </>

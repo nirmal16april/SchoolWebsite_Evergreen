@@ -7,6 +7,7 @@ const MenuItems = (props) => {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);
   const [toppersOpen, setToppersOpen] = useState(false);
+  const [messageOpen, setMessageOpen] = useState(false);
   const [page, setPage] = useState(false);
   const [blog, setBlog] = useState(false);
 
@@ -16,6 +17,7 @@ const MenuItems = (props) => {
       setAboutOpen(false);
       setRulesOpen(false);
       setToppersOpen(false);
+      setMessageOpen(false);
       setPage(false);
       setBlog(false);
     } else if (menu === 'about') {
@@ -23,6 +25,7 @@ const MenuItems = (props) => {
       setAboutOpen(!aboutOpen);
       setRulesOpen(false);
       setToppersOpen(false);
+      setMessageOpen(false);
       setPage(false);
       setBlog(false);
     } else if (menu === 'rules') {
@@ -30,6 +33,7 @@ const MenuItems = (props) => {
       setAboutOpen(false);
       setRulesOpen(!rulesOpen);
       setToppersOpen(false);
+      setMessageOpen(false);
       setPage(false);
       setBlog(false);
     } else if (menu === 'toppers') {
@@ -37,6 +41,15 @@ const MenuItems = (props) => {
       setAboutOpen(false);
       setRulesOpen(false);
       setToppersOpen(!toppersOpen);
+      setMessageOpen(false);
+      setPage(false);
+      setBlog(false);
+    } else if (menu === 'message') {
+      setCourse(false);
+      setAboutOpen(false);
+      setRulesOpen(false);
+      setToppersOpen(false);
+      setMessageOpen(!messageOpen);
       setPage(false);
       setBlog(false);
     } else if (menu === 'page') {
@@ -44,6 +57,7 @@ const MenuItems = (props) => {
       setAboutOpen(false);
       setRulesOpen(false);
       setToppersOpen(false);
+      setMessageOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
@@ -51,6 +65,7 @@ const MenuItems = (props) => {
       setAboutOpen(false);
       setRulesOpen(false);
       setToppersOpen(false);
+      setMessageOpen(false);
       setPage(false);
       setBlog(!blog);
     }
@@ -64,18 +79,13 @@ const MenuItems = (props) => {
 
   return (
     <ul>
-      <li>
-        <Link to="/">
-          <span>Home</span>
-        </Link>
-      </li>
       <li className="has-dropdown">
         <Link
           to="#"
           className={aboutOpen ? 'expanded' : ''}
           onClick={handleClick}
         >
-          <span>About</span>
+          <span>About Us</span>
           <button
             className={`${
               aboutOpen
@@ -96,10 +106,13 @@ const MenuItems = (props) => {
           }
         >
           <li>
-            <Link to="/about-us">About Us</Link>
+            <Link to="/our-founder">Our Founder</Link>
           </li>
           <li>
-            <Link to="/about-society">Society</Link>
+            <Link to="/about-us">Mission &amp; Vision</Link>
+          </li>
+          <li>
+            <Link to="/about-society">Our Society</Link>
           </li>
           <li>
             <Link to="/about-aims-objectives">Aims &amp; Objectives</Link>
@@ -108,21 +121,54 @@ const MenuItems = (props) => {
             <Link to="/about-school-curriculum">School Curriculum</Link>
           </li>
           <li>
-            <Link to="/about-facilities">Facilities</Link>
+            <Link to="/about-facilities">Infrastructure</Link>
           </li>
           <li>
-            <Link to="/about-forms">Forms</Link>
+            <Link to="/smc">School Management Committee (SMC)</Link>
+          </li>
+        </ul>
+      </li>
+      <li className="has-dropdown">
+        <Link
+          to="#"
+          className={messageOpen ? 'expanded' : ''}
+          onClick={handleClick}
+        >
+          <span>Message</span>
+          <button
+            className={`${
+              messageOpen
+                ? 'dropdown-toggle-btn dropdown-opened'
+                : 'dropdown-toggle-btn'
+            } d-xl-none`}
+            type="button"
+            onClick={() => {
+              openMobileMenu('message');
+            }}
+          >
+            <i className="fal fa-angle-right"></i>
+          </button>
+        </Link>
+        <ul
+          className={
+            messageOpen ? 'it-submenu submenu d-block' : 'it-submenu submenu'
+          }
+        >
+          <li>
+            <Link to="/chairmans-message">Chairman&apos;s Message</Link>
           </li>
           <li>
-            <Link to="/mandatory-public-disclosure">
-              Mandatory Public Disclosure
+            <Link to="/managing-directors-message">
+              Managing Director&apos;s Message
             </Link>
           </li>
           <li>
-            <Link to="/e-prospectus">E-Prospectus</Link>
+            <Link to="/principals-message">Principal&apos;s Message</Link>
           </li>
           <li>
-            <Link to="/smc">SMC</Link>
+            <Link to="/vice-principals-message">
+              Vice Principal&apos;s Message
+            </Link>
           </li>
         </ul>
       </li>
@@ -175,7 +221,7 @@ const MenuItems = (props) => {
           className={toppersOpen ? 'expanded' : ''}
           onClick={handleClick}
         >
-          <span>Toppers</span>
+          <span>Our Achievers</span>
           <button
             className={`${
               toppersOpen
@@ -241,7 +287,7 @@ const MenuItems = (props) => {
       </li> */}
       <li className="has-dropdown">
         <Link to="#" className={page ? 'expanded' : ''} onClick={handleClick}>
-          <span>Pages</span>
+          <span>Academics</span>
           <button
             className={`${
               page
@@ -261,28 +307,6 @@ const MenuItems = (props) => {
             page ? 'it-submenu submenu d-block' : 'it-submenu submenu'
           }
         >
-          <li>
-            <Link to="/our-founder">Our Founder</Link>
-          </li>
-          <li>
-            <Link to="/chairmans-message">Chairman&apos;s Message</Link>
-          </li>
-          <li>
-            <Link to="/managing-directors-message">
-              Managing Director&apos;s Message
-            </Link>
-          </li>
-          <li>
-            <Link to="/principals-message">Principal&apos;s Message</Link>
-          </li>
-          <li>
-            <Link to="/vice-principals-message">
-              Vice Principal&apos;s Message
-            </Link>
-          </li>
-          <li>
-            <Link to="/faq">FAQ</Link>
-          </li>
           <li>
             <Link to="/fee-structure">Fee Structure</Link>
           </li>

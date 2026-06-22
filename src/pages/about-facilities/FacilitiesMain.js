@@ -5,7 +5,7 @@ import AboutFacilitiesSection from '../about/AboutFacilitiesSection';
 const FacilitiesMain = () => {
   return (
     <main>
-      <Breadcrumb title="School Facility" subTitle="About" />
+      <Breadcrumb title="Infrastructure" subTitle="About Us" />
       <AboutFacilitiesSection />
     </main>
   );

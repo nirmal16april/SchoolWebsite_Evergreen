@@ -7,7 +7,7 @@ import smcPdf from '../../assets/img/smc/smc.pdf';
 const SmcMain = () => {
   return (
     <main>
-      <Breadcrumb title="School Management Committee (SMC)" subTitle="About" />
+      <Breadcrumb title="School Management Committee (SMC)" subTitle="About Us" />
       <section className="it-about-3-area fix pt-60 pb-120 p-relative grey-bg-4">
         <div className="container">
           <div className="row justify-content-center">
