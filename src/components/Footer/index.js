@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import bgImg from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo.svg';
+import { SCHOOL_LOGO, SCHOOL_NAME } from '../../constants/brand';
 
 const Footer = (props) => {
   const { footerClass, copyrightTextClass } = props;
@@ -27,7 +27,7 @@ const Footer = (props) => {
               <div className="it-footer-widget footer-col-1">
                 <div className="it-footer-logo pb-25">
                   <Link to="/">
-                    <img src={Logo} alt="" />
+                    <img src={SCHOOL_LOGO} alt={SCHOOL_NAME} />
                   </Link>
                 </div>
                 <div className="it-footer-text pb-5">

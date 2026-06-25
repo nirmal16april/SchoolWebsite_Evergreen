@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../../assets/img/logo/logo.svg';
+import { SCHOOL_LOGO, SCHOOL_NAME } from '../../constants/brand';
 
 const Preloader = () => {
   return (
@@ -13,13 +13,11 @@ const Preloader = () => {
               <div className="evergreen-preloader__logo-shell" aria-hidden="true" />
               <img
                 className="it-loading-logo evergreen-preloader__logo"
-                src={Logo}
-                alt="Ever Green Senior Secondary School"
+                src={SCHOOL_LOGO}
+                alt={SCHOOL_NAME}
               />
             </div>
-            <p className="evergreen-preloader__title">
-              Ever Green Senior Secondary School
-            </p>
+            <p className="evergreen-preloader__title">{SCHOOL_NAME}</p>
             <p className="evergreen-preloader__hint">Welcome — preparing your page…</p>
             <div
               className="evergreen-preloader__track"

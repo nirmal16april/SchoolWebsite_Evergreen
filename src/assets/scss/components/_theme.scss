@@ -349,7 +349,7 @@ input[type='color'] {
   --bs-gutter-x: 55px;
 }
 
-/* Make brand logos occupy 45% horizontal space */
+/* School brand logo (circular AppIconLogo) */
 .ed-header-logo img,
 .ed-header-2-logo img,
 .ed-header-3-logo img,
@@ -357,14 +357,18 @@ input[type='color'] {
 .ed-header-5-logo img,
 .search__logo img,
 .itoffcanvas__logo img {
-  width: 120%;
+  width: auto;
   height: auto;
-  max-width: 120%;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 /* Footer logo is intentionally smaller than header logos */
 .it-footer-logo img {
-  width: 45%;
+  width: auto;
   height: auto;
-  max-width: 100%;
+  max-width: 64px;
+  max-height: 64px;
+  object-fit: contain;
 }

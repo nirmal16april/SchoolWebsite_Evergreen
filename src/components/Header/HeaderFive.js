@@ -6,7 +6,7 @@ import {
   EvergreenOffcanvasGetInTouch,
   EvergreenOffcanvasIntro,
 } from './EvergreenOffcanvasSchoolInfo';
-import Logo from '../../assets/img/logo/logo.svg';
+import { SCHOOL_LOGO, SCHOOL_NAME } from '../../constants/brand';
 import phoneSVG from '../../assets/img/footer/1.svg';
 import mailSVG from '../../assets/img/footer/2.svg';
 
@@ -43,7 +43,7 @@ const HeaderFive = (props) => {
                 <div className="search__top d-flex justify-content-between align-items-center">
                   <div className="search__logo">
                     <Link to="/">
-                      <img src={Logo} alt="" />
+                      <img src={SCHOOL_LOGO} alt={SCHOOL_NAME} />
                     </Link>
                   </div>
                   <div className="search__close">
@@ -207,7 +207,7 @@ const HeaderFive = (props) => {
                 <div className="col-xl-2 col-lg-6 col-md-6 col-6">
                   <div className="ed-header-5-logo">
                     <Link to="/">
-                      <img src={Logo} alt="" />
+                      <img src={SCHOOL_LOGO} alt={SCHOOL_NAME} />
                     </Link>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ const HeaderFive = (props) => {
           </div>
           <div className="itoffcanvas__logo">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img src={SCHOOL_LOGO} alt={SCHOOL_NAME} />
             </Link>
           </div>
           <EvergreenOffcanvasIntro />
