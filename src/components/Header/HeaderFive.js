@@ -155,7 +155,7 @@ const HeaderFive = (props) => {
                       <i>
                         <img src={phoneSVG} alt="" />
                       </i>
-                      <a href="tel:(+91)05946-292491">Reception : 05946-292491</a>
+                      <a href="tel:(+91)05946-232762">Office : 05946-232762</a>
                     </li>
                     <li>
                       <i>
@@ -175,7 +175,7 @@ const HeaderFive = (props) => {
                       <Link to="/e-prospectus">E-Prospectus</Link>
                     </li>
                     <li className="d-none d-md-inline-block">
-                      <Link to="/about-forms">Forms</Link>
+                      <Link to="/about-forms">Forms and Documents</Link>
                     </li>
                     <li className="d-none d-md-inline-block">
                       <Link to="/mandatory-public-disclosure">Disclosure</Link>

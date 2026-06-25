@@ -7,7 +7,7 @@ import feeStructurePdf from '../../assets/img/Fee_Structure/feestructure26-27 (1
 const FeeStructureMain = () => {
   return (
     <main>
-      <Breadcrumb title="Fee Structure" subTitle="Pages" />
+      <Breadcrumb title="Fee Structure" subTitle="Academics" />
       <section className="it-about-3-area fix pt-60 pb-120 p-relative">
         <div className="container">
           <div className="row justify-content-center">

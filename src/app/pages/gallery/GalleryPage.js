@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../components/Breadcrumb';
-import { useGetAlbumsQuery } from '../../../store/api/galleryApi';
+import { useGalleryAlbums } from '../../../hooks/useGallery';
 
 import AlbumCard from './components/AlbumCard';
 import {
@@ -10,7 +10,7 @@ import {
 } from './components/GalleryStatus';
 
 const GalleryPage = () => {
-  const { data: albums, isLoading, isError, refetch } = useGetAlbumsQuery();
+  const { data: albums, isLoading, isError, refetch } = useGalleryAlbums();
 
   return (
     <main>

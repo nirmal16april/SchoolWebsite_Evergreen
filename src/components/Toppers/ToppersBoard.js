@@ -19,10 +19,10 @@ function getInitials(name) {
  * @param {{ id: string, label: string, boardExamYear?: string, students: { name: string, score: string, photo?: string }[] }[]} props.sessions
  */
 const ToppersBoard = ({
-  eyebrow = 'Toppers',
+  eyebrow = 'Our Achievers',
   heading,
   breadcrumbTitle,
-  breadcrumbSub = 'Toppers',
+  breadcrumbSub = 'Our Achievers',
   sessions,
 }) => {
   const validSessions = useMemo(

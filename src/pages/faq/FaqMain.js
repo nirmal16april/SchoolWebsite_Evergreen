@@ -45,7 +45,7 @@ const FaqMain = () => {
       id: 'f',
       btnText: 'How can parents contact the school for support?',
       description:
-        'For general queries, parents can contact the school office at (05946) 292491, 9997182574, or 8958851161, or write to evergreenpublicschool42@yahoo.in. Visiting hours and meeting schedules with academic coordinators can be confirmed from the office.',
+        'For general queries, parents can contact the school office at 05946-232762, reception at +91 80574 20801, principal at +91 89588 51161, or managing director at +91 99971 82574. You can also write to evergreenpublicschool42@yahoo.in. Visiting hours and meeting schedules with academic coordinators can be confirmed from the office.',
       faqImage: faqImg,
     },
   ];

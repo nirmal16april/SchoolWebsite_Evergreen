@@ -8,7 +8,7 @@ import Testimonial from './TestimonialSection';
 const AboutMain = () => {
   return (
     <main>
-      <Breadcrumb title="about us" />
+      <Breadcrumb title="Mission & Vision" subTitle="About Us" />
       <About />
       <FunFact />
       <Testimonial />

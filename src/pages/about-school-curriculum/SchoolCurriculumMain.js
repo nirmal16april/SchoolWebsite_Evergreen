@@ -5,7 +5,7 @@ const SchoolCurriculumMain = () => {
   return (
     <AboutInnerPage
       breadcrumbTitle="School Curriculum"
-      breadcrumbSub="About"
+      breadcrumbSub="About Us"
       eyebrow="About Us"
       title="School Curriculum"
       greyBg={false}

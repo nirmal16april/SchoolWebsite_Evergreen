@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Breadcrumb from '../../../components/Breadcrumb';
-import { useGetAlbumByIdQuery } from '../../../store/api/galleryApi';
+import { useAlbumDetail } from '../../../hooks/useGallery';
 
 import ImageGrid from './components/ImageGrid';
 import GalleryModal from './components/GalleryModal';
@@ -16,7 +16,7 @@ const GalleryDetailsPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const { data: album, isLoading, isError, error, refetch } =
-    useGetAlbumByIdQuery(albumId, { skip: !albumId });
+    useAlbumDetail(albumId, { skip: !albumId });
 
   const isNotFound = isError && error?.status === 404;
 

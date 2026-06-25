@@ -99,7 +99,7 @@ const MandatoryDisclosureMain = () => {
                 <td>7</td>
                 <td>Contact Details</td>
                 <td>
-                  (05946) 292491, 9997182574, 8958851161
+                  Office: (05946) 232762, Reception: +91 8057420801, Principal: +91 8958851161, Managing Director: +91 9997182574
                 </td>
               </tr>
             </tbody>

@@ -7,7 +7,7 @@ import eProspectusPdf from '../../assets/img/prospectus/evergreen prospectus.pdf
 const EProspectusMain = () => {
   return (
     <main>
-      <Breadcrumb title="E-Prospectus" subTitle="About" />
+      <Breadcrumb title="E-Prospectus" subTitle="About Us" />
       <section className="it-about-3-area fix pt-60 pb-120 p-relative">
         <div className="container">
           <div className="row justify-content-center">

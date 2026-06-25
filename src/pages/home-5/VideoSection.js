@@ -45,7 +45,7 @@ const Video = () => {
               <span>Quick Contact</span>
               <h3 className="it-video-title">
                 Always ahead for your solutions <br />
-                <a href="tel:+915946292491">05946-292491</a>
+                Office: <a href="tel:+915946232762">05946-232762</a>
               </h3>
               <div className="it-video-button">
                 <Link className="ed-btn-square orange" to="/contact">

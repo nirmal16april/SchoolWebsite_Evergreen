@@ -7,7 +7,7 @@ import bookListPdf from '../../assets/img/Book_List/booklistplay&XII.pdf';
 const BookListMain = () => {
   return (
     <main>
-      <Breadcrumb title="Book List" subTitle="Pages" />
+      <Breadcrumb title="Book List" subTitle="Academics" />
       <section className="it-about-3-area fix pt-60 pb-120 p-relative">
         <div className="container">
           <div className="row justify-content-center">

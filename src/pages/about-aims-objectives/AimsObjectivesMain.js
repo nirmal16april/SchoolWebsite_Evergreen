@@ -5,7 +5,7 @@ const AimsObjectivesMain = () => {
   return (
     <AboutInnerPage
       breadcrumbTitle="Aims & Objectives"
-      breadcrumbSub="About"
+      breadcrumbSub="About Us"
       eyebrow="About Us"
       title="Aims & Objectives"
       greyBg

@@ -6,7 +6,7 @@ import Breadcrumb from '../../components/Breadcrumb';
  */
 const AboutInnerPage = ({
   breadcrumbTitle,
-  breadcrumbSub = 'About',
+  breadcrumbSub = 'About Us',
   greyBg = false,
   children,
 }) => {

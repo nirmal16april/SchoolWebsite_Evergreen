@@ -13,11 +13,11 @@ const VicePrincipalMessageMain = () => {
         subTitle="Message"
       />
 
-      <div className="it-teacher-details-area pt-120 pb-120">
+      <div className="it-teacher-details-area evergreen-leadership-profile pt-120 pb-120">
         <div className="container">
           <div className="it-teacher-details-wrap">
             <div className="row">
-              <div className="col-xl-3 col-lg-3">
+              <div className="col-xl-5 col-lg-5">
                 <div className="it-teacher-details-left">
                   <div className="it-teacher-details-left-thumb">
                     <img src={messageImg} alt="Mr. Rajendra Kumar Pathak" />
@@ -49,9 +49,7 @@ const VicePrincipalMessageMain = () => {
                     <ul>
                       <li>
                         <i className="fa-light fa-phone-volume"></i>
-                        <a href="tel:05946292491">
-                          Reception: 05946-292491
-                        </a>
+                        <a href="tel:05946232762">Office: 05946-232762</a>
                       </li>
                       <li>
                         <i className="fa-light fa-location-dot"></i>
@@ -84,7 +82,7 @@ const VicePrincipalMessageMain = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-9 col-lg-9">
+              <div className="col-xl-7 col-lg-7">
                 <div className="it-teacher-details-right">
                   <div className="it-teacher-details-right-title-box">
                     <h4>Vice Principal&apos;s Message</h4>

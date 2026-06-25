@@ -169,9 +169,10 @@ const ContactMain = () => {
                         </div>
                         <div className="it-contact__text">
                           <span>Phone &amp; Email</span>
-                          <a href="tel:+915946292491">(05946) 292491</a>
-                          <a href="tel:+919997182574">+91 99971 82574</a>
-                          <a href="tel:+918958851161">+91 89588 51161</a>
+                          <a href="tel:+915946232762">Office: 05946-232762</a>
+                          <a href="tel:+918057420801">Reception: +91 80574 20801</a>
+                          <a href="tel:+918958851161">Principal: +91 89588 51161</a>
+                          <a href="tel:+919997182574">Managing Director: +91 99971 82574</a>
                           <a href="mailto:evergreenpublicschool42@yahoo.in">
                             evergreenpublicschool42@yahoo.in
                           </a>
