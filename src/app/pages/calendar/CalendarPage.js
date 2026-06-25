@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
 import Breadcrumb from '../../../components/Breadcrumb';
-import { useGetCalendarEventsQuery } from '../../../store/api/calendarApi';
+import { useCalendarEvents } from '../../../hooks/useCalendar';
 
 import CalendarView from './components/CalendarView';
 import EventListView from './components/EventListView';
@@ -21,7 +21,7 @@ const CalendarPage = () => {
   const [selectedEventId, setSelectedEventId] = useState(null);
 
   const { data: events, isLoading, isFetching, isError, refetch } =
-    useGetCalendarEventsQuery();
+    useCalendarEvents();
 
   const filteredEvents = useMemo(
     () => filterEventsByType(events, activeFilter),

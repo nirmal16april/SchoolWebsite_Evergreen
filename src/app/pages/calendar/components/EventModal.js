@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { useGetCalendarEventByIdQuery } from '../../../../store/api/calendarApi';
+import { useCalendarEventById } from '../../../../hooks/useCalendar';
 import {
   formatEventDateRange,
   getEventBadgeClass,
@@ -9,10 +9,7 @@ import {
 import { CalendarLoading } from './CalendarStatus';
 
 const EventModal = ({ eventId, onClose }) => {
-  const { data: event, isLoading, isError } = useGetCalendarEventByIdQuery(
-    eventId,
-    { skip: !eventId }
-  );
+  const { data: event, isLoading, isError } = useCalendarEventById(eventId);
 
   useEffect(() => {
     const handleKeyDown = (e) => {

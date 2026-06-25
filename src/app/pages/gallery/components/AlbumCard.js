@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { format, parseISO } from 'date-fns';
+
+import { prefetchAlbumDetail } from '../../../../api/cache';
 
 const formatAlbumDate = (dateString) => {
   try {
@@ -13,9 +15,18 @@ const formatAlbumDate = (dateString) => {
 const AlbumCard = ({ album }) => {
   const { id, title, coverImage, totalImages, date } = album;
 
+  const handlePrefetch = useCallback(() => {
+    prefetchAlbumDetail(id);
+  }, [id]);
+
   return (
     <article className="it-gallery-album">
-      <Link to={`/gallery/${id}`} className="it-gallery-album__link">
+      <Link
+        to={`/gallery/${id}`}
+        className="it-gallery-album__link"
+        onMouseEnter={handlePrefetch}
+        onFocus={handlePrefetch}
+      >
         <div className="it-gallery-album__thumb fix">
           <img
             src={coverImage}
