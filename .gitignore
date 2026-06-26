@@ -25,3 +25,4 @@ yarn-error.log*
 context_evergreen.md
 image-usage-report.csv
 
+.vercel
