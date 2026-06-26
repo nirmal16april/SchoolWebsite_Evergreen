@@ -35,40 +35,49 @@ const About = () => {
                   best CBSE Senior Secondary schools in Halduchaur Haldwani.
                 </p>
               </div>
-              <div className="ed-about-5-content">
-                <div className="it-about-5-list mb-10">
+              <div className="ed-about-5-content evergreen-about-highlights">
+                <div className="it-about-5-list">
                   <ul>
                     <li>
-                      <i className="fa-regular fa-check"></i>First English-medium
-                      school in this remote rural area
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        First English-medium school in this remote rural area
+                      </span>
                     </li>
                     <li>
-                      <i className="fa-regular fa-check"></i>Motto: "Vidyaiv Balam"
-                      - intellectual exploration and creativity
-                    </li>
-                  </ul>
-                </div>
-                <div className="it-about-5-list mb-40">
-                  <ul>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Mission: holistic,
-                      value-based and exploratory learning
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        <strong>Motto:</strong> &ldquo;विधैव बलम&rdquo; — intellectual
+                        exploration and creativity
+                      </span>
                     </li>
                     <li>
-                      <i className="fa-regular fa-check"></i>Vision: nurturing
-                      leaders of tomorrow with integrity and responsibility
-                    </li>
-                  </ul>
-                </div>
-                <div className="it-about-5-list mb-40">
-                  <ul>
-                    <li>
-                      <i className="fa-regular fa-check"></i>Established in 1996
-                      with a commitment to academic excellence
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        <strong>Mission:</strong> holistic, value-based and
+                        exploratory learning
+                      </span>
                     </li>
                     <li>
-                      <i className="fa-regular fa-check"></i>Focus on scholastic
-                      growth with all-round personality development
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        <strong>Vision:</strong> nurturing leaders of tomorrow
+                        with integrity and responsibility
+                      </span>
+                    </li>
+                    <li>
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        Established in 1996 with a commitment to academic
+                        excellence
+                      </span>
+                    </li>
+                    <li>
+                      <i className="fa-regular fa-check" aria-hidden="true"></i>
+                      <span>
+                        Focus on scholastic growth with all-round personality
+                        development
+                      </span>
                     </li>
                   </ul>
                 </div>

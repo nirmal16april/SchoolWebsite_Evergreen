@@ -13,13 +13,13 @@ const FunFact = () => {
     // },
     {
       countIcon: 'flaticon-completed-task',
-      countNum: 113,
+      countNum: 150,
       countSubtext: '+',
       countTitle: 'Teacher & Staffs',
     },
     {
       countIcon: 'flaticon-customer-review',
-      countNum: 69,
+      countNum: 70,
       countSubtext: '+',
       countTitle: 'Total Classrooms',
     },

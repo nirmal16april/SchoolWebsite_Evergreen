@@ -24,7 +24,7 @@ const FeesMain = () => {
           <p>
             School and other fee dues are to be paid before the{' '}
             <strong>15th</strong> of every month. Payment made after the 15th
-            will attract a fine of <strong>Rs. 100</strong>.
+            will attract a fine of <strong>Rs. 200</strong>.
           </p>
         </div>
 

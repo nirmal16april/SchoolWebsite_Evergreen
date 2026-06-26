@@ -52,11 +52,13 @@ const About = () => {
                 Delhi and owned by Educational Welfare Society, Tularampur.
               </p>
             </div>
-            <div className="it-about-3-mv-box">
-              <div className="row">
-                <div className="col-xl-6 col-md-6">
-                  <div className="it-about-3-mv-item">
-                    <span className="it-about-3-mv-title">OUR MISSION:</span>
+            <div className="evergreen-mission-vision">
+              <div className="row g-4">
+                <div className="col-lg-6">
+                  <div className="evergreen-mission-vision__item">
+                    <h3 className="evergreen-mission-vision__title">
+                      Our Mission
+                    </h3>
                     <p>
                       To emerge as a role model in holistic, value-based and
                       exploratory learning, creating self-motivated learners and
@@ -64,9 +66,11 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-xl-6 col-md-6">
-                  <div className="it-about-3-mv-item">
-                    <span className="it-about-3-mv-title">OUR VISION:</span>
+                <div className="col-lg-6">
+                  <div className="evergreen-mission-vision__item">
+                    <h3 className="evergreen-mission-vision__title">
+                      Our Vision
+                    </h3>
                     <p>
                       To create leaders of tomorrow with intuitive capabilities,
                       integrity, and a lasting appreciation for learning in a

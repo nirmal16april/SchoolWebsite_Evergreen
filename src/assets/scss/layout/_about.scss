@@ -971,6 +971,7 @@
         font-weight: 400;
         line-height: 32px;
         margin-bottom: 22px;
+        text-align: justify;
     }
 }
 
@@ -983,6 +984,7 @@
     & li {
         margin-bottom: 14px;
         padding-left: 6px;
+        text-align: justify;
     }
 }
 
@@ -1413,10 +1415,14 @@
     & li {
         margin-bottom: 12px;
         padding-left: 4px;
+        text-align: justify;
     }
 }
 
 .rules-page {
+    & p {
+        text-align: justify;
+    }
     & .rules-lead {
         background: linear-gradient(135deg, #fff8f0 0%, #ffffff 55%);
         border-left: 4px solid var(--it-theme-2);
@@ -1450,9 +1456,114 @@
             margin-bottom: 12px;
             line-height: 1.65;
             color: #4d5756;
+            text-align: justify;
             &::marker {
                 color: var(--it-theme-2);
             }
+        }
+    }
+}
+
+.it-about-3-area p,
+.it-about-5-text p {
+    text-align: justify;
+}
+
+.evergreen-mission-vision {
+    margin-top: 8px;
+    margin-bottom: 2rem;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 24px 28px;
+        background-color: #f3f5f5;
+        border-radius: 8px;
+        border-left: 4px solid var(--it-theme-2);
+    }
+
+    &__title {
+        margin: 0 0 14px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--it-common-black);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    & p {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #4d5756;
+        text-align: justify;
+    }
+
+    @media #{$md,$xs} {
+        &__item {
+            padding: 20px 22px;
+        }
+
+        &__title {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 1.65;
+        }
+    }
+}
+
+.evergreen-about-highlights {
+    margin-bottom: 2rem;
+
+    & .it-about-5-list ul {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    & .it-about-5-list ul li {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 16px 20px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.7;
+        text-transform: none;
+        text-align: left;
+        color: #191659;
+        background-color: #f3f5f5;
+        border-radius: 8px;
+
+        & i {
+            position: static;
+            flex-shrink: 0;
+            margin-top: 5px;
+            color: var(--it-theme-2);
+            font-size: 16px;
+        }
+
+        & strong {
+            font-weight: 600;
+            color: var(--it-common-black);
+        }
+
+        @media #{$md,$xs} {
+            font-size: 16px;
+            padding: 14px 16px;
         }
     }
 }

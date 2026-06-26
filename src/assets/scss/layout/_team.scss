@@ -674,6 +674,14 @@
     }
 }
 
+.evergreen-leadership-profile {
+    & .it-teacher-details-right-content {
+        & p {
+            text-align: justify;
+        }
+    }
+}
+
 .evergreen-society-profile {
     & .it-teacher-details-left-thumb {
         & img {
