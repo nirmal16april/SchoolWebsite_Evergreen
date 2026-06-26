@@ -21,7 +21,7 @@ const ImageGrid = ({ images, onImageClick }) => {
             >
               <img
                 src={image.url}
-                alt={`Gallery photo ${index + 1}`}
+                alt={`Gallery ${index + 1} of ${images.length}`}
                 loading="lazy"
                 className="it-gallery-grid__image"
               />

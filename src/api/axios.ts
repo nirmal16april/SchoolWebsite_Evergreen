@@ -1,17 +1,23 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
 
 import { ApiRequestError } from '../types/api';
+import { getApiBaseUrl } from './utils/apiBaseUrl';
 import { toApiRequestError } from './utils/responseUtils';
 
 const API_TIMEOUT_MS = 15000;
 
 export const apiClient: AxiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '',
+  baseURL: getApiBaseUrl(),
   timeout: API_TIMEOUT_MS,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
+});
+
+apiClient.interceptors.request.use((config) => {
+  config.baseURL = getApiBaseUrl();
+  return config;
 });
 
 apiClient.interceptors.response.use(

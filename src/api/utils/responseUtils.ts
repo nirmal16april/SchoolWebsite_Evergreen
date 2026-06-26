@@ -1,4 +1,5 @@
 import { ApiRequestError } from '../../types/api';
+import { toSecureMediaUrl } from './apiBaseUrl';
 
 export function unwrapListPayload(data: unknown): unknown[] {
   if (Array.isArray(data)) {
@@ -140,21 +141,7 @@ export function normalizeDate(value: unknown): string {
 }
 
 export function resolveMediaUrl(url: string): string {
-  if (!url) {
-    return '';
-  }
-
-  if (/^https?:\/\//i.test(url) || url.startsWith('data:') || url.startsWith('/')) {
-    return url;
-  }
-
-  const baseUrl = (process.env.REACT_APP_API_URL || '').replace(/\/$/, '');
-
-  if (!baseUrl) {
-    return url;
-  }
-
-  return `${baseUrl}/${url.replace(/^\//, '')}`;
+  return toSecureMediaUrl(url);
 }
 
 export function toApiRequestError(error: unknown): ApiRequestError {

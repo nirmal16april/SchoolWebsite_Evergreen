@@ -73,7 +73,7 @@ const GalleryModal = ({ images, activeIndex, onClose, onNavigate }) => {
         <div className="it-gallery-modal__stage">
           <img
             src={current.url}
-            alt={`Gallery photo ${activeIndex + 1}`}
+            alt={`Gallery ${activeIndex + 1} of ${total}`}
             className="it-gallery-modal__image"
           />
         </div>

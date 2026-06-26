@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import breadcrumbBG from '../../assets/new-images/banner-header/headerbanner.png';
 import shapeImg1 from '../../assets/img/breadcrumb/shape-1-1.png';
@@ -8,7 +7,7 @@ import shapeImg3 from '../../assets/img/breadcrumb/shape-1-3.png';
 import shapeImg4 from '../../assets/img/breadcrumb/shape-1-4.png';
 
 const Breadcrumb = (props) => {
-  const { itemClass, title, subTitle, backgroundImage, bannerOnly } = props;
+  const { itemClass, title, backgroundImage, bannerOnly } = props;
 
   const defaultClass = bannerOnly
     ? 'it-breadcrumb-area fix it-breadcrumb-bg evergreen-breadcrumb-image-only p-relative'
