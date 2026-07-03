@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 import RightArrow from '../../components/SVG';
 
-import videoBG from '../../assets/img/video/bg-1-1.jpg';
+import videoBG from '../../assets/new-images/banner-header/quickcontact.jpg';
 import shapeImg1 from '../../assets/img/video/shape-1-2.png';
 import shapeImg2 from '../../assets/img/video/shape-1-3.png';
 import shapeImg3 from '../../assets/img/video/shape-1-4.png';

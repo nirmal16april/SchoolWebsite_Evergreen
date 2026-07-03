@@ -16,5 +16,8 @@ export const ALBUM_IMAGES_CACHE_TTL_MS = 15 * 60 * 1000;
 /** Cache TTL for calendar events (10 minutes). */
 export const EVENTS_CACHE_TTL_MS = 10 * 60 * 1000;
 
+/** Cache TTL for home highlights (student birthdays & toppers). */
+export const HIGHLIGHTS_CACHE_TTL_MS = 10 * 60 * 1000;
+
 /** @deprecated Use resource-specific TTL constants instead. */
 export const API_CACHE_TTL_MS = ALBUMS_CACHE_TTL_MS;
