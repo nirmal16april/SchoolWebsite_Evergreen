@@ -61,6 +61,7 @@ import {
   SignIn,
   SignUp,
   Smc,
+  SchoolCabinet,
   StudentRegistration,
   Teacher,
   TeacherDetails,
@@ -120,6 +121,7 @@ function App() {
         />
         <Route path="/e-prospectus" element={<EProspectus />} />
         <Route path="/smc" element={<Smc />} />
+        <Route path="/school-cabinet" element={<SchoolCabinet />} />
         <Route path="/rules-discipline" element={<RulesDiscipline />} />
         <Route path="/rules-admission" element={<RulesAdmission />} />
         <Route path="/rules-withdrawal" element={<RulesWithdrawal />} />

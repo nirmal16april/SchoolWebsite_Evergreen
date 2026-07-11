@@ -98,9 +98,7 @@ const MandatoryDisclosureMain = () => {
               <tr>
                 <td>7</td>
                 <td>Contact Details</td>
-                <td>
-                  Office: (05946) 232762, Reception: +91 8057420801, Principal: +91 8958851161, Managing Director: +91 9997182574
-                </td>
+                <td>(05946) 292491, 9997182574, 8958851161</td>
               </tr>
             </tbody>
           </table>
@@ -208,7 +206,7 @@ const MandatoryDisclosureMain = () => {
               </tr>
               <tr>
                 <td>10</td>
-                <td>Copy of Mandatory Information as per CBSE Circular</td>
+                <td>Mandatory Disclosure Details (SARAS 6.0)</td>
                 <td>
                   <PdfActions file="cbse-mandatory-circular.pdf" />
                 </td>
@@ -292,18 +290,28 @@ const MandatoryDisclosureMain = () => {
               </tr>
               <tr>
                 <td>2</td>
+                <td>Vice Principal</td>
+                <td>01</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Head Mistress</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>4</td>
                 <td>Total No. of Teachers</td>
-                <td>54</td>
+                <td>57</td>
               </tr>
               <tr>
                 <td />
                 <td>PGT</td>
-                <td>18</td>
+                <td>19</td>
               </tr>
               <tr>
                 <td />
                 <td>TGT</td>
-                <td>16</td>
+                <td>17</td>
               </tr>
               <tr>
                 <td />
@@ -313,15 +321,15 @@ const MandatoryDisclosureMain = () => {
               <tr>
                 <td />
                 <td>NTT</td>
-                <td>04</td>
+                <td>05</td>
               </tr>
               <tr>
-                <td>3</td>
+                <td>5</td>
                 <td>Teachers Section Ratio</td>
                 <td>1:1.5</td>
               </tr>
               <tr>
-                <td>4</td>
+                <td>6</td>
                 <td>Details of Special Educator</td>
                 <td>
                   Mrs Pooja Joshi (M.A, B.Ed.)
@@ -330,7 +338,7 @@ const MandatoryDisclosureMain = () => {
                 </td>
               </tr>
               <tr>
-                <td>5</td>
+                <td>7</td>
                 <td>Details of Counsellor and Wellness Teacher</td>
                 <td>
                   Mrs. Poonam Pathak (M.A, B.Ed.)
@@ -360,8 +368,8 @@ const MandatoryDisclosureMain = () => {
               </tr>
               <tr>
                 <td>2</td>
-                <td>No. and Size of the Classrooms (in sq ft)</td>
-                <td>43 (37 — 20×20, 06 — 20×25)</td>
+                <td>No. and Size of the Classrooms (in square mtr)</td>
+                <td>44 (38 — 20×25, 06 — 25×25)</td>
               </tr>
               <tr>
                 <td>3</td>
@@ -369,39 +377,48 @@ const MandatoryDisclosureMain = () => {
                   No. and Size of Laboratories Including Computer Labs (in sq
                   mtr)
                 </td>
-                <td>06 (02 — 7×12, 03 — 6×9, 01 — 6×10)</td>
+                <td>08 (02 — 7×12, 03 — 6×9, 02 — 6×8)</td>
               </tr>
               <tr>
                 <td>4</td>
+                <td>No. and Size of Library (in sq mtr)</td>
+                <td>01 (7×12)</td>
+              </tr>
+              <tr>
+                <td>5</td>
                 <td>Internet Facility</td>
                 <td>Yes</td>
               </tr>
               <tr>
-                <td>5</td>
+                <td>6</td>
                 <td>No. of Girls Toilets</td>
                 <td>20</td>
               </tr>
               <tr>
-                <td>6</td>
+                <td>7</td>
                 <td>No. of Boys Toilets</td>
                 <td>7 with door, 21 urinals</td>
               </tr>
               <tr>
-                <td>7</td>
+                <td>8</td>
+                <td>No. of CWSN Toilets</td>
+                <td>01 with door</td>
+              </tr>
+              <tr>
+                <td>9</td>
                 <td>
                   Link of YouTube video of the inspection of school covering the
                   infrastructure of the school
                 </td>
                 <td>
                   <a
-                    href="https://www.youtube.com/@evergreenseniorsecondaryschool"
+                    href="https://youtu.be/dPw2YEOzdfM"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="disclosure-pdf-link"
                   >
-                    Ever Green Senior Secondary School — YouTube
+                    YouTube Link
                   </a>
-                 
                 </td>
               </tr>
             </tbody>

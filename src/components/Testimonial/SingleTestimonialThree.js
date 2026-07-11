@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Avatar from '../../assets/img/testimonial/avatar-1-1.png';
-
 const SingleTestimonialThree = (props) => {
   const { itemClass, description, authorAvatar, authorName, designation } =
     props;
@@ -25,9 +23,11 @@ const SingleTestimonialThree = (props) => {
         </p>
       </div>
       <div className="ed-testimonial-author-box d-flex align-items-center">
-        <div className="ed-testimonial-author mr-15">
-          <img src={authorAvatar ? authorAvatar : Avatar} alt="" />
-        </div>
+        {authorAvatar ? (
+          <div className="ed-testimonial-author mr-15">
+            <img src={authorAvatar} alt="" />
+          </div>
+        ) : null}
         <div>
           <h5>{authorName ? authorName : 'Ellen Perera'}</h5>
           <span>{designation ? designation : 'CEO at House of Ramen'}</span>

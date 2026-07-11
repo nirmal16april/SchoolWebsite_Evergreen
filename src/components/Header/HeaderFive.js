@@ -7,6 +7,7 @@ import {
   EvergreenOffcanvasIntro,
 } from './EvergreenOffcanvasSchoolInfo';
 import Logo from '../../assets/img/logo/logo.svg';
+import SocialIcons from '../SocialLinks/SocialIcons';
 import phoneSVG from '../../assets/img/footer/1.svg';
 import mailSVG from '../../assets/img/footer/2.svg';
 
@@ -124,29 +125,7 @@ const HeaderFive = (props) => {
           <div className="container container-2">
             <div className="row">
               <div className="col-xl-2 d-none d-xl-block">
-                <div className="ed-header-top-5-social">
-                  <a
-                    href="https://www.facebook.com/evergreenseniorsecondaryschool?mibextid=ZbWKwL"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/evergreenseniorsecondaryschool"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@evergreenseniorsecondaryschool"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </div>
+                <SocialIcons className="ed-header-top-5-social" />
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-3">
                 <div className="ed-header-top-5-contact text-center text-sm-start">
@@ -286,24 +265,26 @@ const HeaderFive = (props) => {
               <i className="fal fa-times"></i>
             </button>
           </div>
-          <div className="itoffcanvas__logo">
-            <Link to="/">
-              <img src={Logo} alt="" />
-            </Link>
+          <div className="itoffcanvas__body">
+            <div className="itoffcanvas__logo ed-header-5-logo">
+              <Link to="/">
+                <img src={Logo} alt="" />
+              </Link>
+            </div>
+            <EvergreenOffcanvasIntro />
+            <div className="it-menu-mobile d-xl-none">
+              {!onePage ? (
+                <MenuItems mobileMenu="show" />
+              ) : (
+                <MenuItemsOnePage
+                  parentMenu={parentMenu}
+                  onePageStyle="onePage5"
+                  mobileMenu="show"
+                />
+              )}
+            </div>
+            <EvergreenOffcanvasGetInTouch />
           </div>
-          <EvergreenOffcanvasIntro />
-          <div className="it-menu-mobile d-xl-none">
-            {!onePage ? (
-              <MenuItems mobileMenu="show" />
-            ) : (
-              <MenuItemsOnePage
-                parentMenu={parentMenu}
-                onePageStyle="onePage5"
-                mobileMenu="show"
-              />
-            )}
-          </div>
-          <EvergreenOffcanvasGetInTouch />
         </div>
       </div>
 

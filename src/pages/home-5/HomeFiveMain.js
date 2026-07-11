@@ -8,6 +8,7 @@ import Testimonial from './TestimonialSection';
 import Video from './VideoSection';
 import WhyChooseUs from './WhyChooseUsSection';
 import Work from './WorkSection';
+import SocialMediaSection from './SocialMediaSection';
 import HighlightsSection from './components/HighlightsSection';
 
 const HomeFiveMain = () => {
@@ -20,10 +21,11 @@ const HomeFiveMain = () => {
       <CTA />
       {/* <Course /> */}
       <WhyChooseUs />
+      <Work />
+      <SocialMediaSection />
       <Testimonial />
       <Video />
       <FAQ />
-      <Work />
       {/* <Blog /> */}
     </main>
   );

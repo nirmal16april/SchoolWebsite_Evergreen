@@ -272,17 +272,17 @@
 
 .evergreen-highlight-card {
   text-align: center;
-  padding: 12px 12px 4px;
+  padding: 6px 12px 2px;
 
   &__media {
     position: relative;
-    width: 150px;
-    margin: 0 auto 20px;
+    width: 180px;
+    margin: 0 auto 12px;
   }
 
   &__photo {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--it-grey-4);
@@ -294,7 +294,7 @@
       justify-content: center;
       background-color: var(--it-common-black);
       color: var(--it-common-white);
-      font-size: 32px;
+      font-size: 36px;
       font-weight: 700;
     }
   }
@@ -331,8 +331,8 @@
   }
 
   &__name {
-    margin: 0 0 8px;
-    font-size: 20px;
+    margin: 0 0 6px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--it-common-black);
     line-height: 1.3;
@@ -354,8 +354,8 @@
   }
 
   &__wish {
-    margin: 14px 0 0;
-    padding: 12px 14px;
+    margin: 10px 0 0;
+    padding: 10px 12px;
     border-radius: 12px;
     background-color: var(--it-grey-2);
     font-size: 14px;
@@ -374,8 +374,8 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin: 0 auto 8px;
-    padding: 8px 16px;
+    margin: 0 auto 6px;
+    padding: 6px 14px;
     border-radius: 999px;
     background-color: var(--it-grey-2);
   }

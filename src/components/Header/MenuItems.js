@@ -58,6 +58,7 @@ const MenuItems = (props) => {
       setRulesOpen(false);
       setToppersOpen(false);
       setMessageOpen(false);
+      setOfficeBearersOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
@@ -332,6 +333,9 @@ const MenuItems = (props) => {
           </li>
           <li>
             <Link to="/calendar">Academic Calendar</Link>
+          </li>
+          <li>
+            <Link to="/school-cabinet">School Cabinet</Link>
           </li>
         </ul>
       </li>

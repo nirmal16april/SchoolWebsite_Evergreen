@@ -56,8 +56,6 @@ const ToppersBoard = ({
               <p className="toppers-hero__lead">
                 Celebrating our students&apos; dedication and outstanding board
                 results. Select an academic session to view the honour roll.
-                Student portraits can be added anytime — placeholders show
-                initials until photos are provided.
               </p>
             </div>
           </div>
@@ -152,7 +150,7 @@ const ToppersBoard = ({
                           <img
                             className="toppers-card__photo"
                             src={s.photo}
-                            alt=""
+                            alt={s.name}
                           />
                         ) : (
                           <div

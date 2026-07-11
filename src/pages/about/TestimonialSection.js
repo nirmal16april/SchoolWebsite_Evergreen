@@ -1,9 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import SingleTestimonial from '../../components/Testimonial';
-
-import testimonialBG from '../../assets/img/testimonial/testimonial-bg.jpg';
+import SectionTitle from '../../components/SectionTitle';
+import SingleTestimonialThree from '../../components/Testimonial/SingleTestimonialThree';
+import { PARENT_TESTIMONIALS } from '../../data/parentTestimonials';
 
 const Testimonial = () => {
   const sliderOption = {
@@ -12,13 +12,10 @@ const Testimonial = () => {
     slidesPerView: '3',
     spaceBetween: 50,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
     breakpoints: {
       1400: {
-        slidesPerView: 3,
-      },
-      1200: {
         slidesPerView: 3,
       },
       992: {
@@ -29,61 +26,41 @@ const Testimonial = () => {
       },
     },
   };
+
   return (
-    <div
-      className="it-testimonial-area ed-testimonial-ptb fix p-relative"
-      style={{ backgroundImage: `url(${testimonialBG})` }}
-    >
+    <div className="it-testimonial-area ed-testimonial-style-2 pt-120 pb-120 fix p-relative">
       <div className="container">
+        <div className="it-testimonial-title-wrap mb-65">
+          <div className="row justify-content-center">
+            <div className="col-xl-6">
+              <SectionTitle
+                itemClass="it-testimonial-title-box text-center"
+                subTitleClass="ed-section-subtitle"
+                subTitle="Testimonials"
+                titleClass="ed-section-title"
+                title="Happy Parents"
+              />
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col-xl-12">
             <div className="ed-testimonial-wrapper">
-              <div className="swiper-container">
+              <div className="swiper-container ed-testimonial-active">
                 <Swiper
                   modules={[Autoplay]}
                   {...sliderOption}
-                  className="swiper-wrapper ed-testimonial-active"
+                  className="swiper-wrapper"
                 >
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonial
-                      description={`“Our children feel loved, safe, and are learning and
-                          growing in spiritual and academic areas of their life.
-                          The faculty and administration are wonderful and
-                          dedicated.”`}
-                      authorName="Mr. Sandeep"
-                      designation="Father"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonial
-                      description={`“Ever Green Sr. Sec. School gives parents so many
-                          opportunities to be involved with their kids in many
-                          aspects of their education and school functions.”`}
-                      authorName="Mrs. Riya"
-                      designation="Mother"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonial
-                      description={`“Ever Green Sr. Sec. School has a strong sense of
-                          community, high standards for academics, and
-                          well-mannered students. It is academically challenging,
-                          while also emphasizing good choices and respect for
-                          others.”`}
-                      authorName="Mrs. Natasha"
-                      designation="Mother"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <SingleTestimonial
-                      description={`“I respect and admire the teachers and staff at Ever
-                          Green Sr. Sec. School. My children were always given
-                          priority, encouragement, and support throughout their
-                          academic development, and every teacher was approachable.”`}
-                      authorName="Mr. Vivek"
-                      designation="Father"
-                    />
-                  </SwiperSlide>
+                  {PARENT_TESTIMONIALS.map((parent) => (
+                    <SwiperSlide key={parent.authorName} className="swiper-slide">
+                      <SingleTestimonialThree
+                        description={parent.description}
+                        authorName={parent.authorName}
+                        designation={parent.designation}
+                      />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>
@@ -93,4 +70,5 @@ const Testimonial = () => {
     </div>
   );
 };
+
 export default Testimonial;

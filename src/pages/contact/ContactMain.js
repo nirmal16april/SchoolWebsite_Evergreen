@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
+import SocialIcons from '../../components/SocialLinks/SocialIcons';
 import emailjs from '@emailjs/browser';
 
 import shapeImg from '../../assets/img/contact/shape-2-1.png';
@@ -207,29 +208,7 @@ const ContactMain = () => {
                       <i className="fa-solid fa-envelope" /> Email School Office
                     </a>
                   </div>
-                  <div className="it-footer-social">
-                    <a
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa-brands fa-facebook-f" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa-brands fa-instagram" />
-                    </a>
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa-brands fa-twitter" />
-                    </a>
-                  </div>
+                  <SocialIcons />
                 </div>
               </div>
             </div>

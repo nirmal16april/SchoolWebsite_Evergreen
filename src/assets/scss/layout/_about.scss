@@ -1266,7 +1266,7 @@
     height: 100%;
     background: #fff;
     border-radius: 18px;
-    padding: 22px 20px 24px;
+    padding: 16px 20px 20px;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 12px 36px rgba(15, 39, 68, 0.08);
@@ -1297,13 +1297,13 @@
     }
     &__photo-wrap {
         position: relative;
-        width: 132px;
-        height: 132px;
-        margin: 8px auto 14px;
+        width: 168px;
+        height: 168px;
+        margin: 2px auto 8px;
     }
     &__photo {
-        width: 132px;
-        height: 132px;
+        width: 168px;
+        height: 168px;
         border-radius: 50%;
         object-fit: cover;
         border: 4px solid #f1f5f9;
@@ -1381,7 +1381,7 @@
         font-weight: 800;
         color: var(--it-common-black);
         line-height: 1.35;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
         letter-spacing: 0.02em;
     }
     &__score-row {
@@ -1565,5 +1565,71 @@
             font-size: 16px;
             padding: 14px 16px;
         }
+    }
+}
+
+.fee-structure-section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--it-common-black);
+    margin-bottom: 1rem;
+}
+
+.fee-structure-section-intro {
+    margin-bottom: 1.5rem;
+    color: #4d5756;
+    line-height: 1.7;
+}
+
+.fee-structure-notes-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    padding: 36px 40px;
+
+    @media #{$md,$xs} {
+        padding: 24px 20px;
+    }
+}
+
+.fee-structure-notes-list {
+    margin: 0 0 1.5rem;
+    padding-left: 1.25rem;
+
+    li {
+        margin-bottom: 14px;
+        line-height: 1.7;
+        color: #4d5756;
+        text-align: justify;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.fee-structure-notes-footer {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    color: #4d5756;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.fee-structure-faq-area {
+    .ed-section-subtitle {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+.fee-structure-faq-accordion {
+    .accordion-body {
+        display: block;
+    }
+
+    .accordion-body p {
+        text-align: justify;
     }
 }

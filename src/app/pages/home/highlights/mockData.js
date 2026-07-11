@@ -3,6 +3,11 @@
  * is unavailable. Page components must never import this file directly.
  */
 
+import {
+  HIGHLIGHTS_CLASS_XII_TOPPERS,
+  HIGHLIGHTS_CLASS_X_TOPPERS,
+} from '../../../../data/toppersStatic';
+
 export const MOCK_STUDENT_BIRTHDAYS = [
   {
     id: 'bday-1',
@@ -38,18 +43,6 @@ export const MOCK_STUDENT_BIRTHDAYS = [
   },
 ];
 
-export const MOCK_CLASS_X_TOPPERS = [
-  { id: 'x-1', name: 'AKASHI JOSHI', score: '98.4%', rank: 1, photo: null, classLevel: 10, academicYear: '2025-26' },
-  { id: 'x-2', name: 'HIMAKSHI BHATT', score: '98.2%', rank: 2, photo: null, classLevel: 10, academicYear: '2025-26' },
-  { id: 'x-3', name: 'BHOOMIKA KABDWAL', score: '98.2%', rank: 3, photo: null, classLevel: 10, academicYear: '2025-26' },
-  { id: 'x-4', name: 'PRASHANSA TIWARI', score: '97.4%', rank: 4, photo: null, classLevel: 10, academicYear: '2025-26' },
-  { id: 'x-5', name: 'RIYA AIRY', score: '97.2%', rank: 5, photo: null, classLevel: 10, academicYear: '2025-26' },
-];
+export const MOCK_CLASS_X_TOPPERS = HIGHLIGHTS_CLASS_X_TOPPERS;
 
-export const MOCK_CLASS_XII_TOPPERS = [
-  { id: 'xii-1', name: 'SAKSHI', score: '97.6%', rank: 1, photo: null, classLevel: 12, academicYear: '2024-25' },
-  { id: 'xii-2', name: 'KARAN BHATT', score: '96.6%', rank: 2, photo: null, classLevel: 12, academicYear: '2024-25' },
-  { id: 'xii-3', name: 'DIVYANSHI PATHAK', score: '94.8%', rank: 3, photo: null, classLevel: 12, academicYear: '2024-25' },
-  { id: 'xii-4', name: 'ADITYA SINGH RATHORE', score: '94.6%', rank: 4, photo: null, classLevel: 12, academicYear: '2024-25' },
-  { id: 'xii-5', name: 'MANSI DEORARI', score: '93.6%', rank: 5, photo: null, classLevel: 12, academicYear: '2024-25' },
-];
+export const MOCK_CLASS_XII_TOPPERS = HIGHLIGHTS_CLASS_XII_TOPPERS;
