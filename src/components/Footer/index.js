@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import bgImg from '../../assets/img/footer/bg-1-1.jpg';
 import Logo from '../../assets/img/logo/logo.svg';
+import SocialIcons from '../SocialLinks/SocialIcons';
 
 const Footer = (props) => {
   const { footerClass, copyrightTextClass } = props;
@@ -37,29 +38,8 @@ const Footer = (props) => {
                     learning and all-round student development.
                   </p>
                 </div>
-                <div className="it-footer-social">
-                  <a
-                    href="https://www.facebook.com/evergreenseniorsecondaryschool?mibextid=ZbWKwL"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/evergreenseniorsecondaryschool"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@evergreenseniorsecondaryschool"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </div>
+                <h4 className="it-footer-title evergreen-footer-social-title">Follow Us</h4>
+                <SocialIcons useBrandColors />
               </div>
             </div>
             <div

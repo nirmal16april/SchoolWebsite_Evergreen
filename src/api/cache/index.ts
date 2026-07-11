@@ -14,6 +14,13 @@ export {
   invalidateGalleryCache,
   loadAlbumDetail,
   loadAlbums,
+  loadBoardToppers,
   loadCalendarEvents,
+  loadStudentBirthdays,
   prefetchAlbumDetail,
+  getCachedBoardToppers,
+  getCachedStudentBirthdays,
+  hasCachedBoardToppers,
+  hasCachedStudentBirthdays,
+  invalidateHighlightsCache,
 } from './publicApiCache';

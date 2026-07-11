@@ -58,6 +58,7 @@ const MenuItems = (props) => {
       setRulesOpen(false);
       setToppersOpen(false);
       setMessageOpen(false);
+      setOfficeBearersOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
@@ -79,6 +80,11 @@ const MenuItems = (props) => {
 
   return (
     <ul>
+      <li>
+        <Link to="/">
+          <span>Home</span>
+        </Link>
+      </li>
       <li className="has-dropdown">
         <Link
           to="#"
@@ -308,6 +314,15 @@ const MenuItems = (props) => {
           }
         >
           <li>
+            <a
+              href="https://berrybees-schoolwebsite.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Berry Bees Website
+            </a>
+          </li>
+          <li>
             <Link to="/fee-structure">Fee Structure</Link>
           </li>
           <li>
@@ -318,6 +333,9 @@ const MenuItems = (props) => {
           </li>
           <li>
             <Link to="/calendar">Academic Calendar</Link>
+          </li>
+          <li>
+            <Link to="/school-cabinet">School Cabinet</Link>
           </li>
         </ul>
       </li>
@@ -352,11 +370,6 @@ const MenuItems = (props) => {
             <Link to="/blog-details">Blog Details</Link>
           </li>
         </ul>
-      </li>
-      <li>
-        <Link to="/contact">
-          <span>Contact</span>
-        </Link>
       </li>
     </ul>
   );

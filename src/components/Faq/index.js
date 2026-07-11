@@ -33,7 +33,9 @@ const FaqOne = (props) => {
             <AccordionItemPanel>
               <div className="accordion-body d-flex align-items-center">
                 <p className="mb-0">{item.description}</p>
-                <img className="d-none d-xl-block" src={item.faqImage} alt="" />
+                {item.faqImage ? (
+                  <img className="d-none d-xl-block" src={item.faqImage} alt="" />
+                ) : null}
               </div>
             </AccordionItemPanel>
           </AccordionItem>

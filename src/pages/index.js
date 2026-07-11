@@ -17,6 +17,7 @@ import AboutForms from './about-forms';
 import MandatoryPublicDisclosure from './mandatory-disclosure';
 import EProspectus from './e-prospectus';
 import Smc from './smc';
+import SchoolCabinet from './school-cabinet';
 import RulesDiscipline from './rules-discipline';
 import RulesAdmission from './rules-admission';
 import RulesWithdrawal from './rules-withdrawal';
@@ -83,6 +84,7 @@ export {
   MandatoryPublicDisclosure,
   EProspectus,
   Smc,
+  SchoolCabinet,
   RulesDiscipline,
   RulesAdmission,
   RulesWithdrawal,

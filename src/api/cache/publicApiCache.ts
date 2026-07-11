@@ -2,9 +2,15 @@ import {
   ALBUM_IMAGES_CACHE_TTL_MS,
   ALBUMS_CACHE_TTL_MS,
   EVENTS_CACHE_TTL_MS,
+  HIGHLIGHTS_CACHE_TTL_MS,
 } from '../../constants/api';
 import { fetchCalendarEvents } from '../calendar';
 import { fetchAlbumDetail, fetchAlbums } from '../gallery';
+import {
+  fetchClassXiiToppers,
+  fetchClassXToppers,
+  fetchStudentBirthdays,
+} from '../highlights';
 import {
   DEFAULT_EVENTS_FROM_MONTH,
   DEFAULT_EVENTS_TO_MONTH,
@@ -12,6 +18,7 @@ import {
 import { EventsQueryParams } from '../../types/calendar';
 import { CalendarEvent } from '../../types/calendar';
 import { Album, AlbumDetail } from '../../types/gallery';
+import { BoardTopper, StudentBirthday } from '../../types/highlights';
 import { apiCache } from './apiCache';
 import { cacheKeys, cachePrefixes } from './cacheKeys';
 
@@ -138,6 +145,60 @@ export function invalidateGalleryCache(): void {
 
 export function invalidateCalendarCache(): void {
   apiCache.invalidateByPrefix(cachePrefixes.calendar());
+}
+
+export function getCachedStudentBirthdays(): StudentBirthday[] | null {
+  return apiCache.get<StudentBirthday[]>(cacheKeys.studentBirthdays());
+}
+
+export function hasCachedStudentBirthdays(): boolean {
+  return apiCache.has(cacheKeys.studentBirthdays());
+}
+
+export function getCachedBoardToppers(classLevel: 10 | 12): BoardTopper[] | null {
+  return apiCache.get<BoardTopper[]>(cacheKeys.boardToppers(classLevel));
+}
+
+export function hasCachedBoardToppers(classLevel: 10 | 12): boolean {
+  return apiCache.has(cacheKeys.boardToppers(classLevel));
+}
+
+export async function loadStudentBirthdays(
+  force = false
+): Promise<StudentBirthday[]> {
+  const key = cacheKeys.studentBirthdays();
+
+  if (force) {
+    apiCache.invalidate(key);
+  }
+
+  return apiCache.getOrSet(
+    key,
+    () => fetchStudentBirthdays(),
+    HIGHLIGHTS_CACHE_TTL_MS
+  );
+}
+
+export async function loadBoardToppers(
+  classLevel: 10 | 12,
+  force = false
+): Promise<BoardTopper[]> {
+  const key = cacheKeys.boardToppers(classLevel);
+
+  if (force) {
+    apiCache.invalidate(key);
+  }
+
+  const loader =
+    classLevel === 10 ? fetchClassXToppers : fetchClassXiiToppers;
+
+  return apiCache.getOrSet(key, () => loader(), HIGHLIGHTS_CACHE_TTL_MS);
+}
+
+export function invalidateHighlightsCache(): void {
+  apiCache.invalidate(cacheKeys.studentBirthdays());
+  apiCache.invalidate(cacheKeys.boardToppers(10));
+  apiCache.invalidate(cacheKeys.boardToppers(12));
 }
 
 export function clearPublicApiCache(): void {
