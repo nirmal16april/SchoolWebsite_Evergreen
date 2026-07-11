@@ -58,7 +58,6 @@ const MenuItems = (props) => {
       setRulesOpen(false);
       setToppersOpen(false);
       setMessageOpen(false);
-      setOfficeBearersOpen(false);
       setPage(!page);
       setBlog(false);
     } else if (menu === 'blog') {
